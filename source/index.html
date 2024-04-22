@@ -7,36 +7,34 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" type="image/png" href="favicons/favicon-32x32.png">
-  <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" href="favicons/android-icon-192x192.png">
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-image" src="#" width="33" height="38" alt="Логотип кота Cat Energy">
-    </a>
-    <a class="main-header__logo" href="index.html">
-      <img class="main-header__logo-text" src="#" width="101" height="18" alt="Текст Cat Energy">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span> </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="catalog.html">Каталог продукций</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="main-header__wrapper">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="#" width="33" height="38" alt="Логотип кота Cat Energy">
+      </a>
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-text" src="#" width="101" height="18" alt="Текст Cat Energy">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span> </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="catalog.html">Каталог продукций</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="container">
     <h1 class="container__title">функциональное питание для котов</h1>
@@ -46,12 +44,12 @@
           <h2 class="visually-hidden">Реклама подбора программы питания</h2>
           <p class="promo__slogan">Занялся собой? Займись котом!</p>
           <picture>
-            <source media="(min-width: 1200px)" width="720" height="694" type="image/png" srcset="images/index-background-desktop@1x.png 1x, images/index-background-desktop@2x.png 2x">
-            <img class=" promo__background" src="images/index-background@1x.png" width="320" height="320" srcset="images/index-background@2x.png 2x" alt="Задний фон на зеленом цвете, кот облизывающий свои усы">
+            <source media="(min-width: 1200px)" width="720" height="694" type="image/png" srcset="images/index-background-desktop@1x.png, images/index-background-desktop@2x.png 2x">
+            <img class="promo__background" src="images/index-background-mobile@1x.png" width="320" height="302" srcset="images/index-background-mobile@2x.png 2x" alt="Задний фон на зеленом цвете, кот облизывающий свои усы">
           </picture>
           <picture>
             <source media="(min-width: 1200px)" width="552" height="499" type="image/jpeg" srcset="images/index-can-desktop@1x.jpg 1x, images/index-can-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" width="709" height="609" type="image/jpeg" srcset="images/index-can-tablet@1x.jpg 1x, images/source/images/index-can-tablet@2x.jpg 2x">
+            <source media="(min-width: 768px)" width="709" height="609" type="image/jpeg" srcset="images/index-can-tablet@1x.jpg 1x, images/index-can-tablet@2x.jpg2x">
             <img class=" promo__background" src="images/index-can-mobile@1x.jpg" width="280" height="270" srcset="images/index-can-mobile@2x.jpgg 2x" alt="Задний фон на зеленом цвете, кот облизывающий свои усы">
           </picture>
           <div class="promo__link">
@@ -63,18 +61,18 @@
     <section class="preview">
       <div class="preview__wrapper">
         <h2 class="visually-hidden">Описание программы питания</h2>
-        <div class="preview__content content">
-          <h3 class="content__title content__title--narrow">Похудение</h3>
+        <div class="preview__content">
+          <h3 class="preview__title preview__title--narrow">Похудение</h3>
           <p class="preview__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <div class="preview__link">
-            <a class="preview__link preview__cotalog" href="catalog.html">каталог slim</a>
+            <a class="preview__item preview__item--catalog" href="catalog.html">каталог slim</a>
           </div>
         </div>
-        <div class="preview__content content">
-          <h3 class="content__title content__title--wide">Набор массы</h3>
+        <div class="preview__content">
+          <h3 class="preview__title preview__title--wide">Набор массы</h3>
           <p class="preview__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <div class="preview__link">
-            <a class="preview__link preview__cotalog" href="catalog.html">каталог pro</a>
+            <a class="preview__item preview__item--cotalog" href="catalog.html">каталог pro</a>
           </div>
         </div>
       </div>
@@ -131,26 +129,28 @@
             <picture>
               <source media="(min-width: 1200px)" width="560" height="512" type="image/jpeg" srcset="images/slaider-before-deskstop@1x.jpg 1x, images/slaider-before-deskstop@2x.jpg 2x">
               <source media="(min-width: 768px)" width="560" height="512" type="image/jpeg" srcset="images/slaider-before-deskstop@1x.jpg 1x, images/slaider-before-deskstop@2x.jpg 2x">
-              <img class="slaider__cat" src="images/slaider-before@1x.jpg" srcset="images/slaider-before@2x.jpg 2x" width="280" height="256" alt="Фото толстого кота до питания">
+              <img class="slaider__cat" src="images/slaider-before@1x.jpg 1x" srcset="images/slaider-before@2x.jpg 2x" width="280" height="256" alt="Фото толстого кота до питания">
             </picture>
           </div>
           <div class="slaider__after">
             <picture>
               <source media="(min-width: 1200px)" width="560" height="512" type="image/jpeg" srcset="images/slaider-after-deskstop@1x.jpg 1x, images/slaider-after-deskstop@2x.jpg 2x">
               <source media="(min-width: 768px)" width="560" height="512" type="image/jpeg" srcset="images/slaider-after-deskstop@1x.jpg 1x, images/slaider-before-deskstop@2x.jpg 2x">
-              <img class="slaider__cat" src="images/slaider-after@1x.jpg" srcset="images/slaider-after@2x.jpg 2x" width="280" height="256" alt="Фото толстого кота до питания">
+              <img class="slaider__cat" src="images/slaider-after@1x.jpg 1x" srcset="images/slaider-after@2x.jpg 2x" width="280" height="256" alt="Фото толстого кота до питания">
             </picture>
           </div>
         </div>
       </div>
     </section>
-    <section class="contacs">
-      <h2 class="visually-hidden">Адрес магазина</h2>
-      <div class="contacs__wrapper">
-        <h2 class="contacs__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="contacs__description">ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург</p>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <h2 class="visually-hidden">Адрес магазина</h2>
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <p class="contacts__description">ул. Большая
+            Конюшенная, д. 19/8
+            Санкт-Петербург</p>
+        </div>
       </div>
     </section>
     <section class="location">
