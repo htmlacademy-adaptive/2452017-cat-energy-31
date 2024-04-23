@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>mobile</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="styles/styles.scss">
+  <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer="defer"></script>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
@@ -28,13 +28,13 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--current">
-              <a href="index.html">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="catalog.html">Каталог продукций</a>
+              <a class="main-nav__link" href="catalog.html">Каталог продукций</a>
             </li>
             <li class="main-nav__item">
-              <a href="#">Подбор программы</a>
+              <a class="main-nav__link" href="#">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -42,24 +42,26 @@
     </div>
   </header>
   <main class="container">
-    <h1 class="container__title">функциональное питание для котов</h1>
     <section class="promo">
       <div class="promo__wrapper">
-        <header class="promo__header">
-          <h2 class="visually-hidden">Реклама подбора программы питания</h2>
-          <p class="promo__slogan">Занялся собой? Займись котом!</p>
-          <picture>
-            <source media="(min-width: 1200px)" width="720" height="694" type="image/png" srcset="images/index-background-desktop@1x.png, images/index-background-desktop@2x.png 2x">
-            <img class="promo__background" src="images/index-background-mobile@1x.png" width="320" height="302" srcset="images/index-background-mobile@2x.png 2x" alt="Задний фон на зеленом цвете, кот облизывающий свои усы">
-          </picture>
-          <picture>
-            <source media="(min-width: 1200px)" width="552" height="499" type="image/jpeg" srcset="images/index-can-deskstop@1x.png, images/index-can-deskstop@2x.png 2x">
-            <source media="(min-width: 768px)" width="709" height="609" type="image/jpeg" srcset="images/index-can-tablet@1x.png, images/index-can-tablet@2x.png 2x">
-            <img class="promo__background" src="images/index-can-mobile@1x.png" width="280" height="270" srcset="images/index-can-mobile@2x.png 2x" alt="Задний фон на зеленом цвете, кот облизывающий свои усы">
-          </picture>
-          <div class="promo__link">
-            <a class="promo__item promo__item--more" href="catalog.html">Подобрать программу</a>
-          </div>
+        <div class="promo__block">
+          <h1 class="promo__title">Функциональное<br> питание для котов</h1>
+          <header class="promo__header">
+            <h2 class="visually-hidden">Реклама подбора программы питания</h2>
+            <p class="promo__slogan">Занялся собой? Займись котом!</p>
+            <picture>
+              <source media="(min-width: 1200px)" width="720" height="694" type="image/png" srcset="images/index-background-desktop@1x.png, images/index-background-desktop@2x.png 2x">
+              <img class="promo__background" src="images/index-background-mobile@1x.png" width="320" height="302" srcset="images/index-background-mobile@2x.png 2x" alt="Задний фон на зеленом цвете, кот облизывающий свои усы">
+            </picture>
+            <picture>
+              <source media="(min-width: 1200px)" width="552" height="499" type="image/jpeg" srcset="images/index-can-deskstop@1x.png, images/index-can-deskstop@2x.png 2x">
+              <source media="(min-width: 768px)" width="709" height="609" type="image/jpeg" srcset="images/index-can-tablet@1x.png, images/index-can-tablet@2x.png 2x">
+              <img class="promo__background" src="images/index-can-mobile@1x.png" width="280" height="270" srcset="images/index-can-mobile@2x.png 2x" alt="Задний фон на зеленом цвете, кот облизывающий свои усы">
+            </picture>
+        </div>
+        <div class="promo__link">
+          <a class="promo__item promo__item--more" href="catalog.html">Подобрать программу</a>
+        </div>
         </header>
       </div>
     </section>

@@ -1,17 +1,29 @@
-.promo{
-
+.promo {
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
 }
 
 .promo__wrapper{
 
 }
 
+.promo__block {
+  background-color: #68b738d9;
+}
+
+.promo__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
 .promo__header{
 
 }
 
-.promo__slogan{
-
+.promo__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
 }
 
 .promo__background{
@@ -22,6 +34,9 @@
 
 }
 
-.promo__item{
-
+.promo__item {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
