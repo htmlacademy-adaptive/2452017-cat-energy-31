@@ -10,10 +10,21 @@
 
 }
 
-.main-nav__list{
+.main-nav__list {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+.main-nav__item {
+}
+
+.main-nav__item--current {
 
 }
 
-.main-nav__item{
-
+.main-nav__link {
+  text-decoration: none;
 }
