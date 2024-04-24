@@ -15,9 +15,10 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  color: $base-color-title;
 }
 
-.preview__description{
+.preview__description {
 
 }
 
@@ -25,6 +26,15 @@
 
 }
 
-.review__item{
+.review__item {
 
+}
+
+.preview__item--catalog {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $base-color-title;
 }

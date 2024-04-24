@@ -16,7 +16,7 @@
   line-height: 20px;
   text-transform: uppercase;
   list-style: none;
-  color: #000000;
+  color: $base-color-title;
 }
 
 .main-nav__item {
@@ -28,5 +28,5 @@
 
 .main-nav__link {
   text-decoration: none;
-  color: #000000;
+  color: $base-color-title;
 }

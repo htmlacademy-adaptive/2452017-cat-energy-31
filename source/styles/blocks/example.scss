@@ -1,13 +1,16 @@
-.example{
-
+.example {
+  background: #eaeaea;
 }
 
 .example__wrapper{
 
 }
 
-.example__title{
-
+.example__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  color: $base-color-title;
 }
 
 .example__description{

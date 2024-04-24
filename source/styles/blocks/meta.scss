@@ -6,7 +6,26 @@
 
 }
 
+.meta__information--title{
+
+}
+
+.meta__information--text {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $base-color-title;
+}
+
 .meta__price{
 
 }
 
+.meta__price--text {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $base-color-title;
+}

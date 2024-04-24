@@ -1,12 +1,18 @@
 .products{
 
 }
+
 .products__wrapper{
 
 }
-.products__title{
 
+.products__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: $base-color-title;
 }
+
 .products__card{
 
 }
