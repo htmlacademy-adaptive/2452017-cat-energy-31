@@ -2,31 +2,15 @@
 
 }
 
-.main-nav__toggle{
+.main-nav__toggle {
+  background-color: #ffffff;
+  border: none;
+}
 
+.main-nav__toggle-icon:hover {
+  opacity: 0.6;
 }
 
 .main-nav__wrapper{
 
-}
-
-.main-nav__list {
-  font-family: "Oswald", sans-serif;
-  font-size: 20px;
-  line-height: 20px;
-  text-transform: uppercase;
-  list-style: none;
-  color: $base-color-title;
-}
-
-.main-nav__item {
-}
-
-.main-nav__item--current {
-
-}
-
-.main-nav__link {
-  text-decoration: none;
-  color: $base-color-title;
 }

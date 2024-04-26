@@ -1,9 +1,10 @@
-.main-header{
-
+.main-header {
+  display: flex;
+  flex-direction: column;
 }
 
-.main-header__wrapper{
-
+.main-header__wrapper {
+  display: flex;
 }
 
 .main-header__logo{

@@ -1,0 +1,38 @@
+.site-list {
+  list-style: none;
+
+  // @media (min-width: $tablet-width) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: flex-start;
+  //   width: 570px;
+  //   flex-grow: 1;
+  // }
+
+  // @media (min-width: $desktop-width) {
+  //   width: 780px;
+  // }
+}
+
+// .site-list__item {
+//   @media (min-width: $tablet-width) {
+//     margin-right: 33px;
+
+//     &:last-child {
+//       margin-right: 0;
+//     }
+
+//     &--active {
+//       position: relative;
+//     }
+//   }
+// }
+
+.site-list a {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $base-color-title;
+  text-decoration: none;
+}

@@ -6,10 +6,13 @@
 
 }
 
-.social__item{
-
+.social__item {
+  mask-image:: url("../../icons/icon-vk.svg");
 }
 
-.ocial__link{
+.social__link{
 
+}
+.social__link--vkontakte{
+  mask-image:: url("../../icons/icon-vk.svg");
 }

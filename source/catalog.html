@@ -13,28 +13,45 @@
   <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
+<svg style="display: none">
+  <symbol viewBox="0 0 24 24" id="open-menu">
+    <path stroke="#000" stroke-width="2" d="M0 3h24m-24 8h24m-24 8h24" />
+  </symbol>
+</svg>
 
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="#" width="33" height="38" alt="Логотип кота Cat Energy">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="images/logo/logo-deskstop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="main-header__logo-image" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип кота Cat Energy">
+        </picture>
       </a>
       <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-text" src="#" width="101" height="18" alt="Текст Cat Energy">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="images/logo/logo-text-deskstop.svg" width="118" height="21" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logo/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
+          <img class="main-header__logo-text" src="images/logo/logo-text-mobile.svg" width="101" height="18" alt="Текст Cat Energy">
+        </picture>
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span> </button>
+      <nav class="main-nav main-nav--opened">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+          <svg class="main-nav__toggle-icon" width="24" height="24">
+            <use href="#open-menu"></use>
+          </svg>
+        </button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
-              <a class="main-nav__link" href="index.html">Главная</a>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--current">
+              <a href="index.html">Главная</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="catalog.html">Каталог продукций</a>
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог продукций</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Подбор программы</a>
+            <li class="site-list__item">
+              <a href="#">Подбор программы</a>
             </li>
           </ul>
         </div>
