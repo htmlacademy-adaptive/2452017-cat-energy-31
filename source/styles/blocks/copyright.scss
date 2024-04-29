@@ -1,4 +1,4 @@
-.copyright{
+.copyright {
 
 }
 
@@ -7,6 +7,10 @@
   text-decoration: none;
 }
 
-.copyright__logo{
+.copyright__logo {
+  fill: #666666;
+}
 
+.copyright__logo:hover {
+  fill: #68b738;
 }

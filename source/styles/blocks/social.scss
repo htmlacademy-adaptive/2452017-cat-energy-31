@@ -1,11 +1,17 @@
-.social{
-
+.social {
 }
 
 .social__list{
 
-}
-
-.social__link{
 
 }
+
+.social__vk {
+  mask-image: url("../../../source/icons/stack.svg#icon-vk");
+  background-color: red;
+  display: block;
+  mask-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
