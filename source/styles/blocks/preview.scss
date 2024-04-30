@@ -6,8 +6,24 @@
 
 }
 
-.preview__content {
+.preview__container {
   background: #f2f2f2;
+}
+
+.preview__block {
+  background-image: url("../../icons/stack.svg#cat-narrow");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  width: 36px;
+  height: 50px;
+}
+
+.preview__block::before {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: red;
 }
 
 .preview__icon-narrow {
