@@ -1,17 +1,64 @@
+
 .social {
+
 }
 
-.social__list{
+.social__list {
+  display: flex;
+  gap: 24px;
+}
 
-
+.social__item {
+  list-style: none;
 }
 
 .social__vk {
-  mask-image: url("../../../source/icons/stack.svg#icon-vk");
-  background-color: red;
-  display: block;
+  mask-image: url("../../icons/stack.svg#icon-vk");
   mask-repeat: no-repeat;
-  width: 20px;
-  height: 20px;
+  width: 27px;
+  height: 17px;
+  display: block;
+  background-color: #666666;
 }
 
+.social__vk:hover {
+  background-color: #68b738;
+}
+
+.social__vk:active {
+  opacity: 0.3;
+}
+
+.social__youtube {
+  mask-image: url("../../icons/stack.svg#icon-youtube");
+  mask-repeat: no-repeat;
+  width: 24px;
+  height: 19px;
+  display: block;
+  background-color: #666666;
+}
+
+.social__youtube:hover {
+  background-color: #68b738;
+}
+
+.social__youtube:active {
+  opacity: 0.3;
+}
+
+.social__telegram {
+  mask-image: url("../../icons/stack.svg#icon-telegram");
+  mask-repeat: no-repeat;
+  width: 20px;
+  height: 17px;
+  display: block;
+  background-color: #666666;
+}
+
+.social__telegram:hover {
+  background-color: #68b738;
+}
+
+.social__telegram:active {
+  opacity: 0.3;
+}
