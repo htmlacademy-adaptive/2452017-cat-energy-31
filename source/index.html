@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
   <meta charset="UTF-8">
+
   <title>mobile</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
@@ -24,40 +26,40 @@
 
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="images/logo/logo-deskstop.svg" width="70" height="59" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
-          <img class="main-header__logo-image" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип кота Cat Energy">
-        </picture>
-      </a>
-      <a class="main-header__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="images/logo/logo-text-deskstop.svg" width="118" height="21" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/logo/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
-          <img class="main-header__logo-text" src="images/logo/logo-text-mobile.svg" width="101" height="18" alt="Текст Cat Energy">
-        </picture>
-      </a>
-      <nav class="main-nav">
+      <div class="main__block">
+        <a class="main-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="images/logo/logo-deskstop.svg" width="70" height="59" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg" width="60" height="50" type="image/svg+xml">
+            <img class="main-header__logo-image" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип кота Cat Energy">
+          </picture>
+        </a>
+        <a class="main-header__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="images/logo/logo-text-deskstop.svg" width="118" height="21" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/logo/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
+            <img class="main-header__logo-text" src="images/logo/logo-text-mobile.svg" width="101" height="18" alt="Текст Cat Energy">
+          </picture>
+        </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
           <svg class="main-nav__toggle-icon" width="24" height="24">
             <use href="#open-menu"></use>
           </svg>
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--current">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Каталог продукций</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      </div>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог продукций</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
   <main class="container promo">

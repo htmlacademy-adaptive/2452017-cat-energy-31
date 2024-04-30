@@ -1,5 +1,7 @@
 .site-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .site-list a {
@@ -9,4 +11,16 @@
   text-transform: uppercase;
   color: $base-color-title;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    width: 436px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    width: 475px;
+  }
 }
