@@ -13,12 +13,60 @@
   color: $base-color-title;
 }
 
-.advantages__list{
-
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.advantages__item{
+.advantages__item {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
 
+.advantages__block--eco {
+  background-color: $base-color-background;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../icons/stack.svg#icon-eco");
+  background-size: 25px 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__block--cooking {
+  background-color: $base-color-background;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../icons/stack.svg#icon-cooking");
+  background-size: 26px 29px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__block--eat {
+  background-color: $base-color-background;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../icons/stack.svg#icon-eat");
+  background-size: 25px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages__block--time {
+  background-color: $base-color-background;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../icons/stack.svg#icon-time");
+  background-size: 26px 31px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .dvantages__description{

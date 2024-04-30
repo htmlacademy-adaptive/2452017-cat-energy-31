@@ -38,7 +38,7 @@
           <img class="main-header__logo-text" src="images/logo/logo-text-mobile.svg" width="101" height="18" alt="Текст Cat Energy">
         </picture>
       </a>
-      <nav class="main-nav main-nav--opened">
+      <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
           <svg class="main-nav__toggle-icon" width="24" height="24">
             <use href="#open-menu"></use>
@@ -88,19 +88,22 @@
     <section class="preview">
       <div class="preview__wrapper">
         <h2 class="visually-hidden">Описание программы питания</h2>
-        <div class="preview__content">
-          <picture>
-            <source media="(min-width: 1440px)" srcset="images/cat-narrow-deskstop.svg" type="image/svg+xml">
-            <source media=" (min-width: 768px)" srcset="images/cat-narrow-tablet.svg" type="image/svg+xml">
-            <img class="cat-narrow" src="images/cat-narrow-mobile.svg" width="36" height="50" alt="Изображение худой черной фигуры кота ">
-          </picture>
+        <div class="preview__container">
+          <div class="preview__block"></div>
+          <div class="preview__content">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="images/cat-narrow-deskstop.svg" type="image/svg+xml">
+              <source media=" (min-width: 768px)" srcset="images/cat-narrow-tablet.svg" type="image/svg+xml">
+              <img class="cat-narrow" src="images/cat-narrow-mobile.svg" width="36" height="50" alt="Изображение худой черной фигуры кота ">
+            </picture>
+          </div>
           <h3 class="preview__title preview__title--narrow">Похудение</h3>
           <p class="preview__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <div class="preview__link">
             <a class="preview__item preview__item--catalog" href="catalog.html">каталог slim</a>
           </div>
         </div>
-        <div class="preview__content">
+        <div class="preview__container">
           <picture>
             <source media="(min-width: 1440px)" srcset="images/cat-wide-deskstop.svg" type="image/svg+xml">
             <source media=" (min-width: 768px)" srcset="images/cat-wide-tablet.svg" type="image/svg+xml">
@@ -118,22 +121,26 @@
       <div class="advantages__wrapper">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
-          <li class="advantages__item advantages__item--eco">
+          <li class="advantages__item">
+            <div class="advantages__block advantages__block--eco"></div>
             <p class="advantages__description">Функциональное питание
               содержит только полезные
               питательные вещества.</p>
           </li>
-          <li class="advantages__item advantages__item--cooking">
+          <li class="advantages__item">
+            <div class="advantages__block advantages__block--cooking"></div>
             <p class="advantages__description">Выпускается в виде порошка,
               который нужно лишь залить
               кипятком и готово.</p>
           </li>
-          <li class="advantages__item advantages__item--food">
+          <li class="advantages__item">
+            <div class="advantages__block advantages__block--eat"></div>
             <p class="advantages__description">Замените один-два приема
               обычной еды на наше
               функциональное питание.</p>
           </li>
-          <li class="advantages__item advantages__item--time">
+          <li class="advantages__item">
+            <div class="advantages__block advantages__block--time"></div>
             <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ul>
@@ -192,12 +199,11 @@
     </section>
     <section class="location">
       <h2 class="visually-hidden">расположение магазина на карте</h2>
-      <div class="location__map-mobile">
-        <img class="map-mobile" src="#" width="320" height="362" alt="Карта Санкт-Петербурга">
-      </div>
-      <div class="location__logo">
-        <img class="logo-mobile" src="#" width="57" height="53" alt="Логотип кота Cat energy на карте Санкт-Петербурга">
-      </div>
+      <picture>
+        <source media="(min-width: 1200px)" width="1440" height="400" type="image/png" srcset="images/map-deskstop@1x.png 1x, images/map-deskstop@2x.png 2x">
+        <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+        <img class="map-mobile" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта Санкт-Петербурга, с маркером кота Энерджи на карте">
+      </picture>
     </section>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
@@ -208,14 +214,16 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__vk" href="https://vk.com/htmlacademy">
-                Мы в контакте
+                <span class="visually-hidden">Мы в контакте</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+              <a class="social__youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Мы в Ютубе</span></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+              <a class="social__telegram" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">Мы в Телеграме</span></a>
             </li>
           </ul>
         </div>

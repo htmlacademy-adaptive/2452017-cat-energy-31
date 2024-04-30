@@ -354,36 +354,41 @@
     </section>
     <section class="location">
       <h2 class="visually-hidden">расположение магазина на карте</h2>
-      <div class="location__map-mobile">
-        <img class="map-mobile" src="#" width="320" height="362" alt="Карта Санкт-Петербурга">
-      </div>
-      <div class="location__logo">
-        <img class="logo-mobile" src="#" width="57" height="53" alt="Логотип кота Cat energy на карте Санкт-Петербурга">
-      </div>
+      <picture>
+        <source media="(min-width: 1200px)" width="1440" height="400" type="image/png" srcset="images/map-deskstop@1x.png 1x, images/map-deskstop@2x.png 2x">
+        <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+        <img class="map-mobile" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта Санкт-Петербурга, с маркером кота Энерджи на карте">
+      </picture>
     </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__logo">
-        <img class="main-footer__logo-image" src="#" width="12" height="12" alt="#">
+        <img class="main-footer__logo-text" src="images/logo/logo-footer.svg" width="128" height="24" alt="Текст Cat Energy">
       </div>
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы контакте</a>
+            <a class="social__vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в контакте</span>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+            <a class="social__youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Мы в Ютубе</span></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+            <a class="social__telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Мы в Телеграме</span></a>
           </li>
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="logo logo--html" src="#" width="12" height="12" alt="#">
+          <svg class="copyright__logo" width="27" height="34">
+            <use href="#logo-html-academy.svg"></use>
+          </svg>
         </a>
       </div>
     </div>
