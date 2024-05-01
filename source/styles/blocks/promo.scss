@@ -2,12 +2,10 @@
   font-family: "Oswald", sans-serif;
 }
 
-.promo__wrapper{
-
-}
+.promo__wrapper {}
 
 .promo__block {
-  background-image: url("../../images/index-background-desktop@1x.png"), linear-gradient(to left, #ffffff 50%, #63a65c 50%, #63a65c 100%);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) rgba(104, 183, 56, 0.85)), url("../../images/index-background-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -18,9 +16,7 @@
   color: #ffffff;
 }
 
-.promo__header {
-
-}
+.promo__header {}
 
 .promo__slogan {
   font-size: 14px;
@@ -29,13 +25,9 @@
   color: #ffffff;
 }
 
-.promo__background{
+.promo__background {}
 
-}
-
-.promo__link{
-
-}
+.promo__link {}
 
 .promo__item {
   font-size: 16px;
