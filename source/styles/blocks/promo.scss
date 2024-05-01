@@ -7,7 +7,9 @@
 }
 
 .promo__block {
-  background-color: #68b738d9;
+  background-image: url("../../images/index-background-desktop@1x.png"), linear-gradient(to left, #ffffff 50%, #63a65c 50%, #63a65c 100%);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .promo__title {
