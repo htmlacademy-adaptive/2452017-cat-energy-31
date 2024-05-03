@@ -1,0 +1,22 @@
+.program {
+
+  margin-top: 122px;
+  padding: 0;
+}
+
+.program__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.program__link {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $base-color-button-text;
+  background-color: $base-color-background;
+  padding: 10px 63.5px;
+  display: block;
+}

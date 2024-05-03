@@ -1,10 +1,28 @@
 .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
 
+.copyright::before {
+  content: "  ";
+  position: absolute;
+  top: -23px;
+  left: -24px;
+  background: #d9d9d9;
+  width: 322px;
+  height: 1px;
 }
 
 .copyright__link {
-  line-height: 20px;
   text-decoration: none;
+  font-family: "Lato";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: $base-color-title;
 }
 
 .copyright__logo {

@@ -4,12 +4,28 @@
 
 .social__list {
   display: flex;
-  gap: 24px;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.social__list::before {
+  content: "  ";
+  position: absolute;
+  top: -23px;
+  left: -24px;
+  background: #d9d9d9;
+  width: 322px;
+  height: 1px;
 }
 
 .social__item {
   list-style: none;
 }
+
 
 .social__vk {
   mask-image: url("../../icons/stack.svg#icon-vk");

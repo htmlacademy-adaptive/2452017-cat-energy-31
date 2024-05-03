@@ -2,8 +2,9 @@
 
 }
 
-.advantages__wrapper{
-
+.advantages__wrapper {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .advantages__title {
@@ -11,68 +12,107 @@
   font-size: 36px;
   line-height: 40px;
   color: $base-color-title;
+  margin: 20px 0 0;
 }
 
 .advantages__list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
+  margin: 40px 0 0;
+  padding: 0;
+  font-family: "Lato";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
 }
 
 .advantages__item {
   display: flex;
-  gap: 20px;
   list-style: none;
 }
 
-.advantages__block{
-
+.advantages__description {
 }
 
-.advantages__block--eco {
+.advantages__description--eco {
+  position: relative;
+  margin: 4px 0 4px 80px;
+  width: 200px;
+}
+
+.advantages__description--eco::before {
+  content: "";
   background-color: $base-color-background;
-  display: block;
   width: 60px;
   height: 60px;
   background-image: url("../../icons/stack.svg#icon-eco");
   background-size: 25px 28px;
   background-repeat: no-repeat;
   background-position: center;
+  position: absolute;
+  left: -80px;
+  top: -2px;
 }
 
-.advantages__block--cooking {
+.advantages__description--cooking {
+  position: relative;
+  margin: 4px 0 4px 80px;
+  width: 200px;
+}
+
+.advantages__description--cooking::before {
+  content: "";
   background-color: $base-color-background;
-  display: block;
   width: 60px;
   height: 60px;
   background-image: url("../../icons/stack.svg#icon-cooking");
-  background-size: 26px 29px;
+  background-size: 26px 30px;
   background-repeat: no-repeat;
   background-position: center;
+  position: absolute;
+  left: -80px;
+  top: -2px;
 }
 
-.advantages__block--eat {
+.advantages__description--eat {
+  position: relative;
+  margin: 4px 0 4px 80px;
+  width: 200px;
+}
+
+.advantages__description--eat::before {
+  content: "";
   background-color: $base-color-background;
-  display: block;
   width: 60px;
   height: 60px;
   background-image: url("../../icons/stack.svg#icon-eat");
-  background-size: 25px 30px;
+  background-size: 26px 30px;
   background-repeat: no-repeat;
   background-position: center;
+  position: absolute;
+  left: -80px;
+  top: -2px;
 }
 
-.advantages__block--time {
+.advantages__description--time {
+  position: relative;
+  margin: 4px 0 4px 80px;
+  width: 200px;
+}
+
+.advantages__description--time::before {
+  content: "";
   background-color: $base-color-background;
-  display: block;
   width: 60px;
   height: 60px;
   background-image: url("../../icons/stack.svg#icon-time");
-  background-size: 26px 31px;
+  background-size: 26px 30px;
   background-repeat: no-repeat;
   background-position: center;
+  position: absolute;
+  left: -80px;
+  top: -2px;
 }
 
-.advantages__description{
-
-}

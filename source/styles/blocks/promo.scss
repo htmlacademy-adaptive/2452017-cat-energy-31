@@ -1,38 +1,67 @@
 .promo {
   font-family: "Oswald", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.promo__wrapper {}
+.promo__wrapper {
+  width: 280px;
+  padding: 0;
+}
 
 .promo__block {
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-desktop@1x.png");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-mobile@1x.png");
   background-repeat: no-repeat;
   background-size: contain;
+  min-width: 320px;
+  height: 302px;
+  margin: 0;
+  padding-top: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__block {
+    background-image: none;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .promo__block {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
 
 .promo__title {
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-.promo__header {}
+.promo__header {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
 
 .promo__slogan {
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   color: #ffffff;
+  text-align: center;
+  margin: 25px 0 0;
 }
 
-.promo__background {}
-
-.promo__link {}
-
-.promo__item {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: $base-color-title;
+.promo__background {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 16px;
+  top: 42px;
 }
