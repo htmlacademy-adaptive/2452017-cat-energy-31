@@ -3,21 +3,25 @@
   background: #eaeaea;
 }
 
-.slider__wrapper{
-
+.slider__wrapper {
+  min-height: 320px;
 }
 
 .slider__bar {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.slider__before{
-
-
+.slider__before {
+  width: 140px;
+  height: 256px;
 }
 
 .slider__cat {
-
+  object-fit: cover;
+  width: 140px;
+  height: 256px;
 }
 
 .slider__group{
@@ -30,6 +34,7 @@
   background: #666666;
   position: relative;
   border-radius: 2px;
+  top: -255px;
 }
 
 .slider__button {
@@ -53,5 +58,4 @@
 }
 
 .slider__after{
-
 }
