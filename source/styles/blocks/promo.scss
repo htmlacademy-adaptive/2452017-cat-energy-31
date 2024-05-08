@@ -2,16 +2,21 @@
   font-family: "Oswald", sans-serif;
   margin: 0;
   padding: 0;
-  min-height: 320px;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   margin-top: -100px;
 }
 
-.promo__wrapper {
-  margin: 0 auto;
-  padding: 0;
-  width: 280px;
+@media (min-width: $tablet-width) {
+  .promo {
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    padding: 0;
+    min-width: 708px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .promo__block {
@@ -20,28 +25,31 @@
   background-size: contain;
   min-width: 320px;
   height: 275px;
-  margin: 0;
   padding-top: 27px;
+  position: relative;
 }
 
 @media (min-width: $tablet-width) {
   .promo__block {
     background-image: none;
+    margin: 0;
+    padding-top: 62px;
   }
 }
 
+.promo__wrapper {
+  margin: 0 auto;
+  padding: 0;
+}
 
-@media (min-width: $desktop-width) {
-  .promo__block {
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-width: 1200px;
+@media (min-width: $tablet-width) {
+  .promo__wrapper {
+    width: 708px;
+    margin: 0 auto;
   }
 }
 
 .promo__title {
-  display: block;
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
@@ -50,9 +58,32 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .promo__title {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 58px;
+    text-align: left;
+    color: $base-color-title;
+    margin-left: 91px;
+    padding: 0;
+  }
+}
+
 .promo__header {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  position: relative;
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .promo__header {
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    width: 708px;
+  }
 }
 
 .promo__slogan {
@@ -64,9 +95,20 @@
   margin: 25px 0 0;
 }
 
+@media (min-width: $tablet-width) {
+  .promo__slogan {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    color: $base-color-title;
+    width: 283px;
+    padding: 0;
+    margin: 42px 0 0 91px;
+  }
+}
 
 .promo__background {
+  position: absolute;
   display: block;
-  margin: 0;
-  padding: 0;
+  top: 43px;
 }

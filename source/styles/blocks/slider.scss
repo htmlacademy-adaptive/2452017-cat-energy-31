@@ -4,31 +4,48 @@
 }
 
 .slider__wrapper {
-  min-height: 320px;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  height: 256px;
+  position: relative; /* нужен для расчёта ширины блока inner2 */
 }
 
 .slider__bar {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .slider__before {
-  display: block;
   width: 280px;
-  margin: 0;
-
-}
-
-.slider__cat {
-  object-fit: cover;
-  width: 50%;
   height: 256px;
-  overflow: hidden;
 }
 
-.slider__group {
-
+.slider__cat-before {
+  width: 280px;
+  height: 256px;
+  top: 0;
+  left: 0;
+  position: relative;
+  background-color: transparent;
 }
+
+.slider__cat-after {
+  width: 280px;
+  height: 256px;
+}
+
+.slider__after {
+  width: var(--left);/* нужен для отодвигания ползунка */
+  height: 256px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;/* нужен для скрытия картинки */
+  background-color: transparent;
+}
+
 
 .slider__scale {
   min-height: 256px;
@@ -36,10 +53,11 @@
   background: #666666;
   position: relative;
   border-radius: 2px;
+  top: -255px;
+  left: 50%;
+  z-index: 100;
 }
 
-.slider__button {
-}
 
 .slider__toggle {
   display: block;
@@ -56,7 +74,4 @@
   position: absolute;
   top: 107px;
   left: -18px;
-}
-
-.slider__after {
 }

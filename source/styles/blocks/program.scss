@@ -10,6 +10,18 @@
   padding: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .program__wrapper {
+    width: 244px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    top: -168px;
+    left: 122px;
+  }
+}
+
 .program__link {
   font-size: 16px;
   line-height: 20px;
@@ -19,4 +31,17 @@
   background-color: $base-color-background;
   padding: 10px 63.5px;
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .program__link {
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $base-color-button-text;
+    background-color: $base-color-background;
+    padding: 14px 26px;
+    display: block;
+  }
 }
