@@ -13,7 +13,7 @@
   font-size: 36px;
   line-height: 40px;
   color: $base-color-title;
-  margin: 23px 0 0;
+  margin: 21px 0 0;
 }
 
 .advantages__list {
@@ -33,10 +33,11 @@
   display: flex;
   list-style: none;
   padding: 0;
-  margin: 2.5px 0 4px;
+  margin: 2px 0 4px;
 }
 
 .advantages__description {
+  padding: 0;
   margin: 0 0 0 80px;
   position: relative;
   width: 200px;
@@ -62,7 +63,7 @@
   width: 60px;
   height: 60px;
   background-image: url("../../icons/stack.svg#icon-cooking");
-  background-size: 26px 30px;
+  background-size: 26px 29px;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -90,7 +91,7 @@
   width: 60px;
   height: 60px;
   background-image: url("../../icons/stack.svg#icon-time");
-  background-size: 26px 30px;
+  background-size: 27px 30px;
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;

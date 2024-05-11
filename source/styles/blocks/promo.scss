@@ -5,7 +5,6 @@
   min-width: 320px;
   display: flex;
   flex-direction: column;
-  margin-top: -100px;
 }
 
 @media (min-width: $tablet-width) {
@@ -16,6 +15,7 @@
     min-width: 708px;
     display: flex;
     flex-direction: column;
+    position: relative;
   }
 }
 
@@ -70,13 +70,6 @@
   }
 }
 
-.promo__header {
-  margin: 0 auto;
-  padding: 0;
-  position: relative;
-  width: 280px;
-}
-
 @media (min-width: $tablet-width) {
   .promo__header {
     margin: 0 auto;
@@ -108,7 +101,7 @@
 }
 
 .promo__background {
-  position: absolute;
   display: block;
-  top: 43px;
+  margin: 0 auto;
+  padding-top: 22px;
 }

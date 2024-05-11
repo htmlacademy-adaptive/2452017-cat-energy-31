@@ -12,6 +12,7 @@
     display: block;
     padding-top: 25px;
     margin: 0;
+    min-width: 768px;
   }
 }
 
@@ -25,8 +26,8 @@
 @media (min-width: $tablet-width) {
   .main-header__wrapper {
     display: flex;
-    justify-content: space-between;
     width: 704px;
+    justify-content: space-between;
     padding: 0;
     flex-direction: row;
     margin: 0 auto;
