@@ -9,13 +9,9 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    font-family: "Oswald", sans-serif;
-    margin: 0;
-    padding: 0;
     min-width: 708px;
     display: flex;
     flex-direction: column;
-    position: relative;
   }
 }
 
@@ -46,6 +42,7 @@
   .promo__wrapper {
     width: 708px;
     margin: 0 auto;
+    position: relative;
   }
 }
 
@@ -67,15 +64,6 @@
     color: $base-color-title;
     margin-left: 91px;
     padding: 0;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .promo__header {
-    margin: 0 auto;
-    padding: 0;
-    position: relative;
-    width: 708px;
   }
 }
 
@@ -103,5 +91,31 @@
 .promo__background {
   display: block;
   margin: 0 auto;
-  padding-top: 22px;
+  padding-top: 29px;
+}
+
+.promo__link {
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $base-color-button-text;
+  background-color: $base-color-background;
+  padding: 10px 0;
+  margin: 3px auto 0;
+  font-family: "Oswald";
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $base-color-button-text;
+    background-color: $base-color-background;
+    padding: 14px 26px;
+    position: absolute;
+  }
 }
