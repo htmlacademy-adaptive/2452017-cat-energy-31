@@ -12,6 +12,8 @@
     min-width: 708px;
     display: flex;
     flex-direction: column;
+    padding: 61px 0 0;
+    margin: 0;
   }
 }
 
@@ -21,7 +23,7 @@
   background-size: contain;
   min-width: 320px;
   height: 275px;
-  padding-top: 27px;
+  padding: 0;
   position: relative;
 }
 
@@ -29,7 +31,7 @@
   .promo__block {
     background-image: none;
     margin: 0;
-    padding-top: 62px;
+    padding: 0;
   }
 }
 
@@ -58,11 +60,10 @@
 @media (min-width: $tablet-width) {
   .promo__title {
     font-size: 60px;
-    font-weight: 400;
-    line-height: 58px;
+    line-height: 60px;
     text-align: left;
     color: $base-color-title;
-    margin-left: 91px;
+    margin-left: 90px;
     padding: 0;
   }
 }
@@ -84,7 +85,7 @@
     color: $base-color-title;
     width: 283px;
     padding: 0;
-    margin: 42px 0 0 91px;
+    margin: 40px 0 0 90px;
   }
 }
 
@@ -92,6 +93,10 @@
   display: block;
   margin: 0 auto;
   padding-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+  }
 }
 
 .promo__link {
@@ -109,13 +114,12 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
+    width: 244px;
+    padding: 14px 0;
     font-size: 20px;
     line-height: 26px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $base-color-button-text;
-    background-color: $base-color-background;
-    padding: 14px 26px;
     position: absolute;
+    top: 227px;
+    left: 90px;
   }
 }

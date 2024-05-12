@@ -174,7 +174,7 @@
   margin-top: 42px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 52px;
+    margin-top: 53px;
   }
 }
 
@@ -186,6 +186,7 @@
   text-transform: uppercase;
   color: $base-color-title;
   position: relative;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -238,6 +239,7 @@
   height: 10px;
   left: 97px;
   top: 7px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     left: 125px;
