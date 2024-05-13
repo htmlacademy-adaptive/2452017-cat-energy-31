@@ -47,11 +47,11 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    display: grid;
-    grid-template-columns: repeat(2, 230px 246px 247px 249px);
+    display: flex;
     flex-flow: row wrap;
-    margin: 0;
-    gap: 137px;
+    margin-top: 32px;
+    gap: 153px;
+    counter-reset: step 0;
   }
 }
 
@@ -60,6 +60,30 @@
   list-style: none;
   padding: 0;
   margin: 2px 0 4px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+    counter-increment: step 1;
+    position: relative;
+  }
+}
+
+.advantages__item::after {
+  content: "" counter(step) "";
+  font-family: "Oswald";
+  color: #f2f2f2;
+  font-size: 280px;
+  line-height: 280px;
+  position: absolute;
+  left: 118px;
+  top: 0;
+  z-index: -1;
+}
+
+.advantages__item--eco {
+  width: 230px;
+  margin: 0;
+  padding-right: 25px;
 }
 
 .advantages__description {
@@ -67,6 +91,19 @@
   margin: 0 0 0 80px;
   position: relative;
   width: 200px;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 148px 0 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__description--eco {
+    width: 204px;
+  }
 }
 
 .advantages__description--eco::before {
@@ -81,6 +118,22 @@
   position: absolute;
   left: -80px;
   top: -2px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -110px;
+    left: 0;
+  }
+}
+
+.advantages__item--cooking {
+  width: 246px;
+  margin: 0;
+}
+
+.advantages__description--cooking {
+  width: 224px;
 }
 
 .advantages__description--cooking::before {
@@ -95,6 +148,13 @@
   position: absolute;
   left: -80px;
   top: -2px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -110px;
+    left: 0;
+  }
 }
 
 .advantages__description--eat::before {
