@@ -13,7 +13,7 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 auto;
     width: 708px;
   }
 }
@@ -49,9 +49,9 @@
     width: 708px;
     display: flex;
     flex-flow: row wrap;
-    margin-top: 32px;
-    gap: 153px;
+    margin: 32px 0 0;
     counter-reset: step 0;
+    background-color: brown;
   }
 }
 
@@ -62,9 +62,12 @@
   margin: 2px 0 4px;
 
   @media (min-width: $tablet-width) {
+    width: 250px;
     min-height: 280px;
     counter-increment: step 1;
     position: relative;
+    background-color: yellow;
+    margin: 0 153px 0 0;
   }
 }
 
@@ -82,8 +85,7 @@
 
 .advantages__item--eco {
   width: 230px;
-  margin: 0;
-  padding-right: 25px;
+  margin: 0 153px 0 0;
 }
 
 .advantages__description {
@@ -155,6 +157,10 @@
     top: -110px;
     left: 0;
   }
+}
+
+.advantages__item--eat {
+  width: 247px;
 }
 
 .advantages__description--eat::before {
