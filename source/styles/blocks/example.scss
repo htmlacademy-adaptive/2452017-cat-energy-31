@@ -2,11 +2,20 @@
   background: #eaeaea;
   margin: 0;
   padding: 25px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    background: none;
+    padding: 45px 0 253px;
+  }
 }
 
 .example__wrapper {
   width: 280px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
+  }
 }
 
 .example__title {
@@ -15,6 +24,11 @@
   line-height: 40px;
   color: $base-color-title;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__description {
@@ -23,6 +37,12 @@
   font-weight: 400;
   line-height: 18px;
   text-align: left;
-  margin-top: 40px;
+  margin: 40px 0 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 60px 0 0;
+  }
 }
 

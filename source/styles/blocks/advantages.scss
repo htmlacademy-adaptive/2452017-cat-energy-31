@@ -3,8 +3,9 @@
   margin: 0;
 
   @media (min-width: $tablet-width) {
-    padding: 45px 30px 0;
+    padding: 44px 30px;
     margin: 0;
+    border-bottom: 1px solid #e6e6e6;
   }
 }
 
@@ -47,27 +48,30 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    display: flex;
+    display: grid;
+    grid-template-rows: 280px 280px;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 60px;
     flex-flow: row wrap;
-    margin: 32px 0 0;
     counter-reset: step 0;
-    background-color: brown;
+    margin: 0;
+    padding: 33px 0 0;
   }
 }
 
 .advantages__item {
+  width: 338px;
   display: flex;
   list-style: none;
   padding: 0;
   margin: 2px 0 4px;
 
   @media (min-width: $tablet-width) {
-    width: 250px;
+    width: 282px;
     min-height: 280px;
     counter-increment: step 1;
     position: relative;
-    background-color: yellow;
-    margin: 0 153px 0 0;
+    margin: 0;
   }
 }
 
@@ -78,14 +82,9 @@
   font-size: 280px;
   line-height: 280px;
   position: absolute;
-  left: 118px;
+  left: 115px;
   top: 0;
   z-index: -1;
-}
-
-.advantages__item--eco {
-  width: 230px;
-  margin: 0 153px 0 0;
 }
 
 .advantages__description {
@@ -99,12 +98,7 @@
     font-size: 16px;
     line-height: 24px;
     margin: 148px 0 0;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .advantages__description--eco {
-    width: 204px;
+    width: 245px;
   }
 }
 
@@ -129,15 +123,6 @@
   }
 }
 
-.advantages__item--cooking {
-  width: 246px;
-  margin: 0;
-}
-
-.advantages__description--cooking {
-  width: 224px;
-}
-
 .advantages__description--cooking::before {
   content: "";
   background-color: $base-color-background;
@@ -159,9 +144,6 @@
   }
 }
 
-.advantages__item--eat {
-  width: 247px;
-}
 
 .advantages__description--eat::before {
   content: "";
@@ -175,6 +157,13 @@
   position: absolute;
   left: -80px;
   top: -2px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -110px;
+    left: 0;
+  }
 }
 
 .advantages__description--time::before {
@@ -189,5 +178,12 @@
   position: absolute;
   left: -80px;
   top: -2px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -110px;
+    left: 0;
+  }
 }
 
