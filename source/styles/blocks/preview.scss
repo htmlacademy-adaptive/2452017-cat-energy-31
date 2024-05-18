@@ -6,6 +6,11 @@
     margin-top: 508px;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 205px;
+    padding: 0;
+  }
 }
 
 .preview__wrapper {
@@ -15,6 +20,14 @@
   @media (min-width: $tablet-width) {
     width: 708px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 1220px;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 80px;
   }
 }
 
@@ -27,6 +40,10 @@
     background: #f2f2f2;
     margin-top: 29px;
     padding: 77px 29px 58px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
   }
 }
 
@@ -70,6 +87,24 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .preview__title--narrow::after {
+    content: "";
+    background-image: url("../../icons/stack.svg#cat-narrow");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    background-size: 70px 97px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1000;
+    top: -38px;
+    left: 0;
+    padding: 0;
+  }
+}
+
 .preview__title--wide {
   padding-left: 50px;
   position: relative;
@@ -108,6 +143,24 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .preview__title--wide::after {
+    content: "";
+    background-image: url("../../icons/stack.svg#cat-wide-tablet");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    background-size: 136px 57px;
+    width: 136px;
+    height: 57px;
+    position: absolute;
+    z-index: 1000;
+    top: -12px;
+    left: -20px;
+    padding: 0;
+  }
+}
+
 .preview__title {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -127,6 +180,11 @@
     margin: 0;
     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 206px;
+    padding-left: 162px;
+  }
 }
 
 .preview__title::before {
@@ -140,11 +198,17 @@
   position: absolute;
 
   @media (min-width: $tablet-width) {
-    content: "";
     width: 200px;
     height: 200px;
     left: 393px;
     top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    left: 0;
+    top: -32px;
   }
 }
 
@@ -160,13 +224,16 @@
   margin-top: 29px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     width: 340px;
-    flex-wrap: wrap;
-    font-family: "Lato";
     font-size: 16px;
     line-height: 24px;
     margin-top: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 457px;
+    flex-wrap: wrap;
+    margin-top: 73px;
   }
 }
 
@@ -175,6 +242,10 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 27px;
   }
 }
 

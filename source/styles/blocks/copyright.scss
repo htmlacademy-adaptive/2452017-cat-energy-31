@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
 }
 
 .copyright::before {
@@ -12,6 +16,10 @@
   background: #d9d9d9;
   width: 280px;
   height: 1px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .copyright__link {
@@ -23,6 +31,10 @@
   line-height: 20px;
   text-align: left;
   color: $base-color-title;
+
+  @media (min-width: $tablet-width) {
+    width: 113px;
+  }
 }
 
 .copyright__logo {

@@ -6,6 +6,10 @@
 .location__map {
   width: 100%;
   min-height: 362px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
 }
 
 .location iframe {

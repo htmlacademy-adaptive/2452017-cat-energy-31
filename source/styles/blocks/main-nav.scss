@@ -6,10 +6,8 @@
 .main-nav__toggle {
   background-color: #ffffff;
   border: none;
-}
 
-@media (min-width: $tablet-width) {
-  .main-nav__toggle {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
@@ -18,14 +16,17 @@
   margin: 0 auto;
   padding: 0;
   width: 280px;
-}
 
-@media (min-width: $tablet-width) {
-  .main-nav__wrapper {
+  @media (min-width: $tablet-width) {
     margin: 0;
     padding: 14px 0 12px;
-    gap: 8px;
     min-width: 436px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 17px 0 12px;
+    min-width: 475px;
   }
 }
 
