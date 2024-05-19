@@ -1,8 +1,24 @@
+.contacts-location {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
 .contacts {
   padding: 26px 0;
 
   @media (min-width: $tablet-width) {
     padding: 60px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    width: 565px;
+    background: #ffffff;
+    top: 25%;
   }
 }
 
@@ -15,6 +31,10 @@
 
   @media (min-width: $tablet-width) {
     width: 628px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 407px;
   }
 }
 
@@ -56,4 +76,23 @@
     display: inline-block;
     margin-top: 20px;
   }
+}
+
+.location {
+
+
+}
+
+.location__map {
+  width: 100%;
+  min-height: 362px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 400px;
+  }
+}
+
+.location iframe {
+  border: none;
+  display: block;
 }

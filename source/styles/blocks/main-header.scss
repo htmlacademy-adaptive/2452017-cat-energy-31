@@ -60,7 +60,7 @@
     margin: 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     width: 202px;
     flex-direction: row;

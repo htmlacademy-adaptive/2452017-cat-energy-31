@@ -19,6 +19,13 @@
     flex-direction: row;
     gap: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+  }
 }
 
 .main-footer__logo {
@@ -34,7 +41,6 @@
 .main-footer__social {
   margin: 0;
   padding: 0;
-
 }
 
 .main-footer__copyright{

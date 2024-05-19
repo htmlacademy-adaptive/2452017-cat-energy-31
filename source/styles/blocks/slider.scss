@@ -1,22 +1,19 @@
-.slider {
-  padding-bottom: 40px;
-  background: #eaeaea;
-
-  @media (min-width: $tablet-width) {
-    min-height: 462px;
-    padding: 0;
-  }
-}
-
 .slider__wrapper {
   width: 280px;
-  margin: 0 auto;
+  margin: 18px auto;
   padding: 0;
   height: 256px;
   position: relative;
 
   @media (min-width: $tablet-width) {
+    padding-top: 86px;
     min-width: 560px;
+    min-height: 462px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -25,8 +22,11 @@
     width: 560px;
     height: 512px;
     position: absolute;
-    top: -150px;
     background: #eaeaea;
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+    }
   }
 }
 
@@ -58,7 +58,11 @@
     padding: 0;
     width: 560px;
     height: 512px;
-    background-image: linear-gradient(#ffffff 29.3%, #00000000 29.3%,);
+    background-image: linear-gradient(#ffffff 29.5%, #00000000 29.5%,);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(#ffffff 26.7%, #00000000 26.7%,);
   }
 }
 
@@ -69,7 +73,11 @@
   @media (min-width: $tablet-width) {
     width: 560px;
     height: 512px;
-    background-image: linear-gradient(#ffffff 29.3%, #00000000 29.3%,);
+    background-image: linear-gradient(#ffffff 29.5%, #00000000 29.5%,);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(#ffffff 26.7%, #00000000 26.7%,);
   }
 }
 

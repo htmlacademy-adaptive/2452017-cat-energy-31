@@ -9,7 +9,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 71px 110px;
+    padding: 73px 110px 67px;
+    border: none;
   }
 }
 
@@ -90,16 +91,18 @@
   }
 }
 
-.advantages__item::after {
-  content: "" counter(step) "";
-  font-family: "Oswald";
-  color: #f2f2f2;
-  font-size: 280px;
-  line-height: 280px;
-  position: absolute;
-  left: 115px;
-  top: 0;
-  z-index: -1;
+@media (min-width: $tablet-width) {
+  .advantages__item::after {
+    content: "" counter(step) "";
+    font-family: "Oswald";
+    color: #f2f2f2;
+    font-size: 280px;
+    line-height: 280px;
+    position: absolute;
+    left: 115px;
+    top: 0;
+    z-index: -1;
+  }
 }
 
 .advantages__description {
