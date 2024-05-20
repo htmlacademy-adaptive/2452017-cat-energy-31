@@ -1,9 +1,12 @@
-.products{
-
+.products {
+  display: flex;
+  flex-direction: column;
+  padding: 27px 0 0;
 }
 
-.products__wrapper{
-
+.products__wrapper {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .products__title {
@@ -11,8 +14,11 @@
   font-size: 36px;
   line-height: 36px;
   color: $base-color-title;
+  margin: 0;
+  text-align: left;
 }
 
-.products__card{
-
+.products__card {
+  margin: 41px 0 0;
+  padding-top: 22px;
 }
