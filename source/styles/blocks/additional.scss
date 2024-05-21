@@ -2,14 +2,96 @@
 
 }
 
-.additional__wrapper{
-
+.additional__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .additional__title {
   font-family: "Oswald", sans-serif;
-  font-size: 32px;
-  line-height: 32px;
+  font-size: 24px;
+  line-height: 24px;
   color: $base-color-title;
 }
 
+.additional__block {
+  border-top: 1px solid #cdcdcd;
+  padding: 13px 0 19px;
+}
+
+.additional__product {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 280px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: left;
+  color: $base-color-title;
+  text-transform: uppercase;
+}
+
+.additional__text {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 280px;
+  justify-content: space-between;
+  color: $base-color-title;
+  line-height: 14px;
+  text-align: left;
+  padding: 0;
+}
+
+.additional-price {
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 14px;
+  color: $base-color-title;
+}
+
+.additional__button {
+  display: block;
+  padding: 10px 109px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  background: #68b738;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 16px 0 0;
+}
+
+.additional__promo {
+  border-top: 1px solid #cdcdcd;
+}
+
+.additional__promo-background {
+  background-image: linear-gradient(90deg, #68b738d9, #68b738d9), url("../../images/background-catalog-mobile@2x.png");
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 290px;
+  padding: 43px 55px;
+}
+
+.additional__text-promo {
+  display: flex;
+  flex-wrap: wrap;
+  color: #ffffff;
+  width: 161px;
+  text-align: center;
+}
+
+.additional__text-promo::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#icon-box");
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+  width: 78px;
+  height: 81px;
+}

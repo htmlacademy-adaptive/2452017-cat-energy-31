@@ -3,8 +3,23 @@
   padding: 0;
 }
 
+.card__container {
+  position: relative;
+}
+
+.card__container::before {
+  content: "  ";
+  position: absolute;
+  top: -23px;
+  left: -22px;
+  background: #e6e6e6;
+  width: 322px;
+  height: 1px;
+}
+
 .card__link {
   display: flex;
+  margin: 0;
 }
 
 .card__content {
@@ -17,14 +32,11 @@
 }
 
 .card__item {
+  width: 50%;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
-}
-
-.card__image{
-
 }
 
 .card__title {
@@ -41,11 +53,12 @@
   font-size: 12px;
   line-height: 16px;
   width: 140px;
-  margin: 0;
+  margin: 13px 0 0;
   padding: 0;
 }
 
 .card__text {
+  width: 140px;
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -57,31 +70,69 @@
   padding: 0;
 }
 
+
 .card__button {
+  display: block;
+  padding: 10px 109px;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   text-decoration: none;
+  background: #68b738;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 16px 0 0;
 }
 
-.card__button--order {
-  background: #68b738;
-  // padding: 10px 109px;
+.card__show {
+  display: flex;
+  flex-direction: column;
+  width: 219px;
+  margin: 0 auto;
+}
+
+.card__more {
+  background-image: url("../../icons/icon-plus.svg");
+  background-size: 30px 30px;
+  width: 219px;
+  min-height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card__title-more {
+  display: flex;
+  flex-wrap: wrap;
+  width: 219px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $base-color-title;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+
+.card__text-more {
+  display: flex;
+  flex-wrap: wrap;
+  width: 219px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
 }
 
 .card__button-all {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  display: block;
+  padding: 10px 95px;
   color: $base-color-title;
   text-decoration: none;
-}
-
-.card__button-all--show {
   background: #f2f2f2;
-}
-
-.card__button--order-product {
-  background: #68b738;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 16px 0 0;
 }
