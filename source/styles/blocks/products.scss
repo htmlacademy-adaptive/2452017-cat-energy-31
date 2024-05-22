@@ -46,6 +46,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    gap: 60px;
+    gap: 40px 60px;
+    margin: 41px 0 0;
   }
 }

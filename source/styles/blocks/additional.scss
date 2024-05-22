@@ -1,5 +1,4 @@
-.additional{
-
+.additional {
 }
 
 .additional__wrapper {
@@ -24,6 +23,7 @@
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
+    margin: 72px 0 0 40px;
   }
 
   &::after {
@@ -43,8 +43,8 @@
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    padding: 26px 38px 28px;
-    margin: 0 auto;
+    margin: 80px 0 0;
+    border: 1px solid #f2f2f2;
   }
 }
 
@@ -57,14 +57,25 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    width: 632px;
+    margin: 0 auto;
+    border: none;
   }
 
   &:first-child {
     margin: 21px 0 0;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 auto;
+    }
   }
 
   &:last-child {
     border-bottom: 1px solid #cdcdcd;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
   }
 }
 
