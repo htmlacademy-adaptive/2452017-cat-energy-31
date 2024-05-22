@@ -14,11 +14,39 @@
   font-size: 24px;
   line-height: 24px;
   color: $base-color-title;
+  margin: 25px 0 0;
+  position: relative;
+
+  &::after {
+    content: "  ";
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    background: #68b738;
+    width: 35px;
+    height: 2px;
+  }
 }
 
-.additional__block {
+.additional__list {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.additional__item {
   border-top: 1px solid #cdcdcd;
-  padding: 13px 0 19px;
+  padding: 12px 0 19px;
+  list-style: none;
+  margin: 0;
+
+  &:first-child {
+    margin: 21px 0 0;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 .additional__product {
@@ -31,6 +59,7 @@
   text-align: left;
   color: $base-color-title;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .additional__text {
@@ -62,28 +91,33 @@
   background: #68b738;
   text-transform: uppercase;
   text-align: center;
-  margin: 16px 0 0;
+  margin: 0;
 }
 
 .additional__promo {
-  border-top: 1px solid #cdcdcd;
-}
-
-.additional__promo-background {
+  display: flex;
+  flex-direction: column;
   background-image: linear-gradient(90deg, #68b738d9, #68b738d9), url("../../images/background-catalog-mobile@2x.png");
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 290px;
-  padding: 43px 55px;
+  padding: 187px 61px 43px 58px;
+  margin: 20px 0 0;
 }
 
 .additional__text-promo {
+  max-width: 161px;
   display: flex;
   flex-wrap: wrap;
   color: #ffffff;
-  width: 161px;
   text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  gap: 48px;
+  position: relative;
 }
 
 .additional__text-promo::before {
@@ -94,4 +128,7 @@
   box-sizing: border-box;
   width: 78px;
   height: 81px;
+  position: absolute;
+  top: -128px;
+  left: 43px;
 }

@@ -94,3 +94,17 @@
     display: none;
   }
 }
+
+.site-list__item--current-catalog {
+  position: relative;
+
+  &::after {
+    content: "  ";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background: #68b738;
+    width: 153px;
+    height: 2px;
+  }
+}

@@ -7,6 +7,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  padding: 41px 0;
 }
 
 .subscribe__title {
@@ -14,6 +15,18 @@
   font-size: 24px;
   line-height: 24px;
   color: $base-color-title;
+  margin: 0;
+  position: relative;
+
+  &::after {
+    content: "  ";
+    position: absolute;
+    top: 10px;
+    right: -20px;
+    background: #68b738;
+    width: 108px;
+    height: 2px;
+  }
 }
 
 .subscribe__description {
@@ -23,12 +36,14 @@
   font-size: 16px;
   line-height: 24px;
   color: $base-color-title;
+  margin: 32px 0 8px;
   text-align: center;
 }
 
 .subscribe__form {
   display: flex;
   flex-direction: column;
+  margin: 0;
   gap: 16px;
 }
 
