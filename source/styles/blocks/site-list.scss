@@ -40,6 +40,11 @@
   }
 }
 
+.site-list--catalog a {
+  color: $base-color-title;
+  font-size: 20px;
+  line-height: 30px;
+}
 
 .site-list__item {
   margin: 0;
@@ -106,5 +111,9 @@
     background: #68b738;
     width: 153px;
     height: 2px;
+
+    @media (min-width: $desktop-width) {
+      width: 171px;
+    }
   }
 }
