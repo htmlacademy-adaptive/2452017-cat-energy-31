@@ -122,7 +122,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 24px;
+    margin: 0 0 17px;
+    padding-right: 2px;
   }
 }
 
@@ -145,6 +146,11 @@
     padding: 0 0 5px;
     margin: 0 0 6px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 5px;
+    margin: 6 0 0;
+  }
 }
 
 
@@ -153,6 +159,17 @@
   padding: 0;
 }
 
+@media (min-width: $desktop-width) {
+  .card__taste {
+    padding-bottom: 3px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card__price {
+    padding-bottom: 3px;
+  }
+}
 
 .card__button {
   display: block;
@@ -174,6 +191,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 10px 53px;
+    margin: 32px 0 0;
   }
 }
 
@@ -229,6 +247,10 @@
     line-height: 24px;
     margin: 50px 0 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 39px 0 0;
+  }
 }
 
 
@@ -245,6 +267,10 @@
     font-size: 16px;
     line-height: 18px;
     margin: 22px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 26px 0 0;
   }
 }
 
@@ -267,6 +293,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 10px 53px;
+    padding: 10px 39px;
+    margin: 90px 0 0;
   }
 }
