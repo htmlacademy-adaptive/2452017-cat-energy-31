@@ -3,9 +3,14 @@
   background: #eaeaea;
 
   @media (min-width: $tablet-width) {
-    padding: 55px 0;
+    padding: 57px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 69px 0;
   }
 }
+
 
 .main-footer__wrapper {
   width: 280px;
@@ -32,6 +37,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     margin-right: 160px;

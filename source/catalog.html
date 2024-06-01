@@ -23,7 +23,7 @@
     </symbol>
   </svg>
 
-  <header class="main-header">
+  <header class="main-header__catalog">
     <div class="main-header__wrapper">
       <div class="main__block">
         <a class="main-header__logo" href="index.html">
@@ -33,11 +33,11 @@
             <img class="main-header__logo-image" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип кота Cat Energy">
           </picture>
         </a>
-        <a class="main-header__logo-text" href="index.html">
+        <a class="main-header__logo" href="index.html">
           <picture>
-            <source media="(min-width: 1440px)" srcset="images/logo/logo-text-deskstop.svg" width="118" height="21" type="image/svg+xml">
-            <source media="(min-width: 768px)" srcset="images/logo/logo-text-tablet.svg" width="101" height="18" type="image/svg+xml">
-            <img class="main-header__logo-text" src="images/logo/logo-text-mobile.svg" width="101" height="20" alt="Текст Cat Energy">
+            <source media="(min-width: 1440px)" srcset="images/logo/logo-text-mobile.svg" width="118" height="21" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/logo/logo-text-mobile.svg" width="101" height="18" type="image/svg+xml">
+            <img class="main-header__logo-text" src="images/logo/logo-text-mobile.svg" width="120" height="18" alt="Текст Cat Energy">
           </picture>
         </a>
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
@@ -47,7 +47,7 @@
         </button>
       </div>
       <div class="main-nav-catalog__wrapper">
-        <ul class="main-nav__list site-list site-list--catalog">
+        <ul class="site-list site-list--catalog">
           <li class="site-list__item">
             <a href="index.html">Главная</a>
           </li>
@@ -293,8 +293,8 @@
       </div>
     </section>
     <section class="additional">
-      <h2 class="additional__title">Дополнительные товары</h2>
       <div class="additional__wrapper">
+        <h2 class="additional__title">Дополнительные товары</h2>
         <ul class="additional__list">
           <li class="additional__item">
             <p class="additional__product">Сахарозаменитель</p>
@@ -384,10 +384,10 @@
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="copyright__logo" width="27" height="34">
-            <use href="#logo-html-academy.svg"></use>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-lebel="Посетить сайт разработчика">
+          <p class="copyright__text">HTML Academy</p>
+          <svg width="27" height="34">
+            <use class="copyright__logo" href="icons/stack.svg#logo-html-academy"></use>
           </svg>
         </a>
       </div>

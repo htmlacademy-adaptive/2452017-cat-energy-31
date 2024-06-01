@@ -44,12 +44,15 @@
 
 .contacts__title {
   font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: $base-color-title;
   width: 140px;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -59,13 +62,14 @@
 }
 
 .contacts__description {
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-align: left;
   width: 140px;
   margin: 0;
+
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

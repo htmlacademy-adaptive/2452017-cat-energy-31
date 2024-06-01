@@ -10,8 +10,17 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 110px 70px;
-    display: flex;
+
     background-image: linear-gradient(#ffffff 22.6%, #00000000 22.6%);
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example-container {
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
     justify-content: space-between;
   }
 }
@@ -33,6 +42,7 @@
 
 .example__title {
   font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: $base-color-title;
@@ -47,7 +57,7 @@
 .example__description {
   display: flex;
   flex-wrap: wrap;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -57,7 +67,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin: 60px 0 0;
+    margin: 59px 0 0;
   }
 
   @media (min-width: $desktop-width) {
