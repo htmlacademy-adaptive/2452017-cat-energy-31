@@ -5,6 +5,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    margin: 66px 0 0 0;
   }
 }
 
@@ -27,12 +28,12 @@
   content: "  ";
   position: absolute;
   top: -23px;
-  background: #e6e6e6;
+  background: rgba(242, 242, 242, 1);
   width: 100vw;
   height: 1px;
   display: block;
   right: 0;
-  box-shadow: 100vw 0 0 0 #e6e6e6;
+  box-shadow: 100vw 0 0 0 rgba(242, 242, 242, 1);
   z-index: -100;
 
   @media (min-width: $tablet-width) {
@@ -55,7 +56,7 @@
     flex-direction: column;
     max-width: 324px;
     padding: 31px 37px 40px;
-    background: #f2f2f2;
+    background: rgba(242, 242, 242, 1);
     background-image: linear-gradient(#ffffff 19%, #f2f2f2 19%,);
     margin: 0;
   }
@@ -130,6 +131,7 @@
 .card__text {
   width: 140px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0;
   padding: 0;
@@ -149,6 +151,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 0 5px;
+    width: 169px;
     margin: 6 0 0;
   }
 }
@@ -179,10 +182,20 @@
   line-height: 20px;
   color: #ffffff;
   text-decoration: none;
-  background: #68b738;
+  background: rgba(104, 183, 56, 1);
   text-transform: uppercase;
   text-align: center;
   margin: 16px 0 0;
+
+  &:hover,
+  &:focus {
+
+    background: rgba(94, 170, 47, 1);
+  }
+
+  &:active {
+    color: rgba(142, 195, 109, 1);
+  }
 
   @media (min-width: $tablet-width) {
     padding: 10px 94px;
@@ -205,7 +218,7 @@
 
 
   @media (min-width: $tablet-width) {
-    outline: 2px solid #f2f2f2;
+    outline: 2px solid rgba(242, 242, 242, 1);
     align-items: center;
     margin-top: 101px;
     padding-bottom: 38px;
@@ -282,10 +295,20 @@
   padding: 10px 95px;
   color: $base-color-title;
   text-decoration: none;
-  background: #f2f2f2;
+  background: rgb(242, 242, 242);
   text-transform: uppercase;
   margin: 21px 0 0;
   text-align: center;
+
+  &:hover,
+  &:focus {
+
+    background: rgb(235, 235, 235);
+  }
+
+  &:active {
+    background: rgb(235, 235, 235);
+  }
 
   @media (min-width: $tablet-width) {
     margin: 83px 0 0;

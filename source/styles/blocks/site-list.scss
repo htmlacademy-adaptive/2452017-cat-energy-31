@@ -95,11 +95,6 @@
   margin: 0;
   position: relative;
 
-
-  &:last-child {
-    margin-bottom: 22px;
-  }
-
   &::before {
     content: "  ";
     position: absolute;
@@ -160,7 +155,7 @@
   &::after {
     content: "  ";
     position: absolute;
-    top: 35px;
+    top: 30px;
     left: 1px;
     background: #68b738;
     width: 167px;

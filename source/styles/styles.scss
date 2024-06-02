@@ -7,10 +7,9 @@
 
 /* BLOCKS */
 
-@import "./blocks/header.scss";
 @import "./blocks/page.scss";
 @import "./blocks/main-header.scss";
-@import "./blocks/main-nav.scss";
+@import "./blocks/main-header-catalog.scss";
 @import "./blocks/site-list.scss";
 @import "./blocks/container.scss";
 @import "./blocks/promo.scss";
@@ -19,14 +18,10 @@
 @import "./blocks/example.scss";
 @import "./blocks/meta.scss";
 @import "./blocks/slider.scss";
-@import "./blocks/contacts-location.scss";
-@import "./blocks/location.scss";
+@import "./blocks/address.scss";
 @import "./blocks/main-footer.scss";
 @import "./blocks/social.scss";
-@import "./blocks/copyright.scss";
 @import "./blocks/products.scss";
 @import "./blocks/card.scss";
 @import "./blocks/additional.scss";
-@import "./blocks/additional-product.scss";
 @import "./blocks/subscribe.scss";
-@import "./blocks/products.scss";

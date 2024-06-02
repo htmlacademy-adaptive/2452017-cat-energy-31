@@ -1,17 +1,17 @@
 .example {
-  background: #eaeaea;
+  background: rgba(242, 242, 242, 1);
   margin: 0;
   padding: 25px 0 23px;
 
   @media (min-width: $tablet-width) {
     padding: 45px 0 133px;
-    background-image: linear-gradient(#ffffff 57.3%, #00000000 57.3%);
+    background-image: linear-gradient(rgb(255, 255, 255) 57.3%, rgb(242, 242, 242) 57.3%);
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 110px 70px;
 
-    background-image: linear-gradient(#ffffff 22.6%, #00000000 22.6%);
+    background-image: linear-gradient(rgb(255, 255, 255) 22.6%, rgb(242, 242, 242) 22.6%);
     justify-content: space-between;
   }
 }
@@ -75,4 +75,3 @@
     margin: 146px 0 0;
   }
 }
-

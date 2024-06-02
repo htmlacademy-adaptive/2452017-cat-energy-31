@@ -1,8 +1,6 @@
-.main-header {
+.main-header-catalog {
   padding: 0;
   margin: 0;
-  position: relative;
-
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -12,45 +10,12 @@
 
   @media (min-width: $desktop-width) {
     display: block;
-    padding: 55px 0 29px;
+    padding: 51px 0 29px;
     margin: 0;
-
-    &::after {
-      content: "";
-      top: 0;
-      left: 50%;
-      bottom: 0; /*  - ВАЖНО - прижимает фон к низу блока */
-      width: 100%;
-      position: absolute;
-      z-index: -100;
-      min-height: 693px;
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85)), url("../../images/index-background-mobile@2x.png"), linear-gradient(90deg, rgba(80, 78, 83, 0.85) 50%, rgba(80, 80, 85, 0.85) 50%);
-      background-repeat: no-repeat;
-      background-size: contain;
-      padding: 0;
-      background-position: bottom;
-    }
   }
 }
 
-.main-header__main-nav {
-  margin: 0 auto;
-  padding: 0;
-  width: 280px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    padding: 14px 0 12px;
-    width: 436px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 15px 2px 12px;
-    width: 478px;
-  }
-}
-
-.main-header__wrapper {
+.main-header-catalog__wrapper {
   display: flex;
   width: 280px;
   margin: 0 auto;
@@ -76,7 +41,7 @@
 }
 
 
-.main-header__block {
+.main-header-catalog__block {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -99,8 +64,25 @@
   }
 }
 
+.main-header-catalog__main-nav-catalog {
+  margin: 0 auto;
+  padding: 0;
+  width: 280px;
 
-.main-header__logo {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 14px 0 12px;
+    width: 436px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 16px 0 12px;
+    width: 480px;
+  }
+}
+
+.main-header-catalog__logo {
   padding-top: 14px;
 
   &:hover {
@@ -117,7 +99,7 @@
 }
 
 
-.main-header__logo-text {
+.main-header-catalog__logo-text {
   padding: 9px 5px 0 16px;
   width: 110px;
   height: auto;
@@ -141,8 +123,8 @@
   }
 }
 
-.main-header__toggle {
-  background-color: rgb(255, 255, 255);
+.main-header-catalog__toggle {
+  background-color: #ffffff;
   border: none;
 
   @media (min-width: $tablet-width) {
