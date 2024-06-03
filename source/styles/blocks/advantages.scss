@@ -1,0 +1,208 @@
+.advantages {
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 30px 46px;
+    margin: 0;
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 41px 110px 67px;
+    border: none;
+  }
+}
+
+.advantages__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.advantages__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $base-color-title;
+  margin: 21px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 40px 0 49px;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    display: grid;
+    grid-template-rows: 280px 280px;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 60px;
+    flex-flow: row wrap;
+    counter-reset: step 0;
+    margin: 0;
+    padding: 33px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    grid-template-rows: 280px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3.5%;
+  }
+}
+
+.advantages__item {
+  width: 338px;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 2px 0 4px;
+
+  @media (min-width: $tablet-width) {
+    width: 282px;
+    min-height: 280px;
+    counter-increment: step 1;
+    position: relative;
+    margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__item::after {
+    content: "" counter(step) "";
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    color: #f2f2f2;
+    font-size: 280px;
+    line-height: 280px;
+    position: absolute;
+    left: 115px;
+    top: 0;
+    z-index: -1;
+  }
+}
+
+.advantages__description {
+  padding: 0;
+  margin: 0 0 0 80px;
+  position: relative;
+  width: 200px;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 150px 0 0;
+    width: 245px;
+  }
+}
+
+.advantages__description--eco::before {
+  content: "";
+  background-color: $base-color-background;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../icons/stack.svg#icon-eco");
+  background-size: 25px 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: -80px;
+  top: -2px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -110px;
+    left: 0;
+  }
+}
+
+.advantages__description--cooking::before {
+  content: "";
+  background-color: $base-color-background;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../icons/stack.svg#icon-cooking");
+  background-size: 26px 29px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: -80px;
+  top: -2px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -110px;
+    left: 0;
+  }
+}
+
+
+.advantages__description--eat::before {
+  content: "";
+  background-color: $base-color-background;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../icons/stack.svg#icon-eat");
+  background-size: 26px 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: -80px;
+  top: -2px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -110px;
+    left: 0;
+  }
+}
+
+.advantages__description--time::before {
+  content: "";
+  background-color: $base-color-background;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../icons/stack.svg#icon-time");
+  background-size: 27px 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: -80px;
+  top: -2px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -110px;
+    left: 0;
+  }
+}

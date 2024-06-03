@@ -1,0 +1,322 @@
+.card {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 66px 0 0;
+  }
+}
+
+.card__container {
+  position: relative;
+  list-style: none;
+
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
+.card__container::before {
+  content: "  ";
+  position: absolute;
+  top: -23px;
+  background: rgba(242, 242, 242, 1);
+  width: 100vw;
+  height: 1px;
+  display: block;
+  right: 0;
+  box-shadow: 100vw 0 0 0 rgba(242, 242, 242, 1);
+  z-index: -100;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 104px 0 0;
+  }
+}
+
+
+.card__link {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    max-width: 324px;
+    padding: 31px 37px 40px;
+    background: rgba(242, 242, 242, 1);
+    background-image: linear-gradient(#ffffff 19%, #f2f2f2 19%,);
+    margin: 0;
+  }
+}
+
+.card__content {
+  display: flex;
+  width: 50%;
+  min-height: 107px;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 210px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    height: 210px;
+    margin: 0;
+  }
+}
+
+.card__item {
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    margin: 21px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 10px 0 0;
+  }
+}
+
+.card__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $base-color-title;
+  margin: 0 0 14px;
+  width: 75px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    width: 135px;
+    margin: 0 0 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 17px;
+    padding-right: 2px;
+  }
+}
+
+.card__text {
+  width: 140px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    border-bottom: 1px solid #cdcdcd;
+    padding: 0 0 5px;
+    margin: 0 0 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 5px;
+    width: 169px;
+    margin: 6 0 0;
+  }
+}
+
+
+.card__weight {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $desktop-width) {
+  .card__taste {
+    padding-bottom: 3px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .card__price {
+    padding-bottom: 3px;
+  }
+}
+
+.card__button {
+  display: block;
+  padding: 10px 109px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  background: rgba(104, 183, 56, 1);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 16px 0 0;
+
+  &:hover,
+  &:focus {
+
+    background: rgba(94, 170, 47, 1);
+  }
+
+  &:active {
+    color: rgba(142, 195, 109, 1);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 94px;
+    margin: 26px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 53px;
+    margin: 32px 0 0;
+  }
+}
+
+
+.card__show {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3px;
+  text-align: center;
+  align-items: center;
+
+
+  @media (min-width: $tablet-width) {
+    outline: 2px solid rgba(242, 242, 242, 1);
+    align-items: center;
+    margin-top: 101px;
+    padding-bottom: 38px;
+  }
+}
+
+.card__more {
+  background-image: url("../../icons/stack.svg#icon-plus-tablet");
+  background-size: 30px 30px;
+  width: 219px;
+  min-height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    min-height: 60px;
+    background-size: contain;
+    margin: 49px 0 0;
+  }
+}
+
+.card__title-more {
+  display: flex;
+  flex-wrap: wrap;
+  width: 219px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $base-color-title;
+  text-transform: uppercase;
+  justify-content: center;
+  margin: 24px 0 0;
+
+  @media (min-width: $tablet-width) {
+    width: 134px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 50px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 39px 0 0;
+  }
+}
+
+
+.card__text-more {
+  display: flex;
+  flex-wrap: wrap;
+  width: 219px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  margin: 8px 0 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    margin: 22px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 26px 0 0;
+  }
+}
+
+.card__button-all {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  padding: 10px 95px;
+  color: $base-color-title;
+  text-decoration: none;
+  background: rgb(242, 242, 242);
+  text-transform: uppercase;
+  margin: 21px 0 0;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+
+    background: rgb(235, 235, 235);
+  }
+
+  &:active {
+    background: rgb(235, 235, 235);
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 83px 0 0;
+    padding: 10px 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 39px;
+    margin: 90px 0 0;
+  }
+}

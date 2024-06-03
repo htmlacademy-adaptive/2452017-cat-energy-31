@@ -1,0 +1,340 @@
+.preview {
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 525px 0 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 236px;
+    padding: 0;
+  }
+}
+
+.preview__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 1220px;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 80px;
+  }
+}
+
+.preview__container {
+  background: #f2f2f2;
+  margin-top: 20px;
+  padding: 30px 33px 18px 20px;
+
+  @media (min-width: $tablet-width) {
+    background: #f2f2f2;
+    margin: 0 0 30px;
+    padding: 78px 29px 58px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
+
+
+.preview__title--narrow {
+  position: relative;
+  padding-left: 21px;
+
+  &::after {
+    content: "";
+    background-image: url("../../icons/stack.svg#cat-narrow");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 36px;
+    height: 50px;
+    position: absolute;
+    z-index: 1000;
+    top: -10px;
+    left: 6px;
+    padding: 0;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .preview__title--narrow::after {
+    content: "";
+    background-image: url("../../icons/stack.svg#cat-narrow");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    background-size: 140px 194px;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 393px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .preview__title--narrow::after {
+    content: "";
+    background-image: url("../../icons/stack.svg#cat-narrow");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    background-size: 70px 97px;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: 1000;
+    top: -38px;
+    left: 0;
+    padding: 0;
+  }
+}
+
+.preview__title--wide {
+  padding-left: 50px;
+  position: relative;
+
+  &::after {
+    content: "";
+    background-image: url("../../icons/stack.svg#cat-wide");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 67px;
+    height: 28px;
+    position: absolute;
+    z-index: 1000;
+    top: 6px;
+    left: -8px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .preview__title--wide::after {
+    content: "";
+    background-image: url("../../icons/stack.svg#cat-wide-tablet");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    background-size: 269px 112px;
+    width: 268px;
+    height: 200px;
+    position: absolute;
+    z-index: 1000;
+    top: 15px;
+    left: 359px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .preview__title--wide::after {
+    content: "";
+    background-image: url("../../icons/stack.svg#cat-wide-tablet");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    background-size: 136px 57px;
+    width: 136px;
+    height: 57px;
+    position: absolute;
+    z-index: 1000;
+    top: -10px;
+    left: -20px;
+    padding: 0;
+  }
+}
+
+.preview__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $base-color-title;
+  text-align: center;
+  position: relative;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    text-align: left;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 206px;
+    padding-left: 162px;
+  }
+}
+
+.preview__title::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $base-color-background;
+  left: 0;
+  top: -6px;
+  position: absolute;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 200px;
+    left: 393px;
+    top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+    left: 0;
+    top: -30px;
+  }
+}
+
+
+.preview__description {
+  display: flex;
+  width: 227px;
+  flex-wrap: wrap;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    width: 340px;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 23px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 457px;
+    flex-wrap: wrap;
+    margin-top: 73px;
+  }
+}
+
+.preview__link {
+  margin-top: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 28px;
+  }
+}
+
+.preview__item {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $base-color-title;
+  position: relative;
+  margin: 0;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 29.64px;
+  }
+}
+
+
+.preview__item::before {
+  content: "  ";
+  width: 240px;
+  height: 1px;
+  background: #d9d9d9;
+  position: absolute;
+  top: -16px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+
+.preview__item--slim::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#icon-arrow");
+  width: 40px;
+  height: 12px;
+  left: 102px;
+  top: 6px;
+  background-position: -8px 0;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    left: 133px;
+    top: 10px;
+  }
+}
+
+.preview__item--slim:hover::after,
+:focus::after {
+  transform: scaleX(1.1);
+  transition: 0.4s;
+  background-position: 0 0;
+}
+
+
+.preview__item--pro::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#icon-arrow");
+  width: 40px;
+  height: 12px;
+  left: 98px;
+  top: 7px;
+  margin: 0;
+  background-position: -8px 0;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    left: 129px;
+    top: 10px;
+  }
+}
+
+.preview__item--pro:hover::after,
+:focus::after {
+  transform: scaleX(1.1);
+  transition: 0.4s;
+  background-position: 0 0;
+}

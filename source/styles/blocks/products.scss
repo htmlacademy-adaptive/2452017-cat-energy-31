@@ -1,0 +1,65 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  padding: 27px 0 0;
+  border-top: 1px solid #ebebeb;
+  margin-top: 9px;
+  border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin: 0;
+    padding: 60px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 0 0;
+  }
+}
+
+.products__wrapper {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.products__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  color: $base-color-title;
+  margin: 0;
+  text-align: left;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+}
+
+.products__card {
+  display: flex;
+  flex-direction: column;
+  margin: 41px 0 0;
+  padding: 22px 0 24px;
+  gap: 46px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 41px 60px;
+    margin: 43px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 45px 80px;
+  }
+}
