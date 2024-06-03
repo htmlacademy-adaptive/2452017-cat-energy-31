@@ -20,13 +20,13 @@
       top: 0;
       left: 50%;
       bottom: 0; /*  - ВАЖНО - прижимает фон к низу блока */
-      width: 100%;
+      width: 50%;
       position: absolute;
       z-index: -100;
       min-height: 693px;
       background-image: linear-gradient(rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85)), url("../../images/index-backgroud-desktop@2x.jpg"), linear-gradient(90deg, rgba(80, 78, 83, 0.85) 50%, rgba(80, 80, 85, 0.85) 50%);
       background-repeat: no-repeat;
-      background-size: contain;
+      background-size: cover;
       padding: 0;
       background-position: left;
     }
