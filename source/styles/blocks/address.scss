@@ -7,10 +7,6 @@
   }
 }
 
-.address--catalog {
-  background: rgb(242, 242, 242);
-}
-
 .address__contacts {
   padding: 26px 0;
 
@@ -28,12 +24,8 @@
   }
 }
 
-.contacs__catalog {
-  background: #f2f2f2;
-
-  @media (min-width: $desktop-width) {
-    background: #ffffff;
-  }
+.address__contacts--catalog {
+  background: rgb(242, 242, 242);
 }
 
 .address__wrapper {
