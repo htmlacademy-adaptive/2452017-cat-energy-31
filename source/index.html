@@ -12,6 +12,8 @@
   <link rel="icon" type="image/png" href="favicons/favicon-32x32.png">
   <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="/source/fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="/source/fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -39,40 +41,37 @@
             <img class="main-header__logo-text" src="images/logo/logo-text-mobile.svg" width="120" height="18" alt="Текст Cat Energy">
           </picture>
         </a>
-        <button class="main-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
-          <svg class="main-header__toggle-icon" width="24" height="24">
-            <use href="#"></use>
-          </svg>
-        </button>
+        <nav class="main-header-nav navigation navigation--closed">
+          <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="site-list">
+            <li class="site-list__item site-list__item--current">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог продукций</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div class="main-header__main-nav">
-        <ul class="site-list">
-          <li class="site-list__item site-list__item--current">
-            <a href="index.html">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="catalog.html">Каталог продукций</a>
-          </li>
-          <li class="site-list__item">
-            <a href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="promo">
-      <div class="promo__wrapper">
-        <h1 class="promo__title">Функциональное<br> питание для котов</h1>
-        <h2 class="visually-hidden">Реклама подбора программы питания</h2>
-        <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <picture>
-          <source type="image/webp" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.webp 1x, images/index-can-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.webp 1x, images/index-can-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="images/index-can-mobile@1x.webp 1x, images/index-can-mobile@2x.webp 2x">
-          <source media="(min-width: 1200px)" width="552" height="499" type="image/png" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
-          <img class="promo__background" src="images/index-can-mobile@1x.png" width="280" height="270" srcset="images/index-can-mobile@2x.png 2x" alt="Фон в виде большой банки питанием со вкусом курицы ">
-        </picture>
-        <a class="promo__link" href="catalog.html">Подобрать программу</a>
+      <div class="promo">
+        <div class="promo__wrapper">
+          <h1 class="promo__title">Функциональное<br> питание для котов</h1>
+          <h2 class="visually-hidden">Реклама подбора программы питания</h2>
+          <p class="promo__slogan">Занялся собой? Займись котом!</p>
+          <picture>
+            <source media="(min-width: 1440px)" width="552" height="499" type="image/webp" srcset="images/index-can-desktop@1x.webp 1x, images/index-can-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" width="709" height="609" type="image/webp" srcset="images/index-can-tablet@1x.webp 1x, images/index-can-tablet@2x.webp 2x">
+            <source srcset="images/index-can-mobile@1x.webp 1x, images/index-can-mobile@2x.webp 2x" width="280" height="270" type="image/webp">
+            <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
+            <img class="promo__background" src="images/index-can-mobile@1x.png" width="280" height="270" srcset="images/index-can-mobile@2x.png 2x" alt="Фон в виде большой банки питанием со вкусом курицы ">
+          </picture>
+          <a class="promo__link" href="catalog.html">Подобрать программу</a>
+        </div>
       </div>
     </div>
   </header>
@@ -144,8 +143,8 @@
           <div class="slider__bar">
             <div class="slider__after">
               <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-after-desktop@1x.webp 1x, images/cat-after-desktop@2x.webp 2x">
-                <source type="image/webp" srcset="images/cat-after-mobile@1x.webp 1x, images/cat-after-mobile@2x.webp 2x">
+                <source type="image/webp" width="560" height="512" media="(min-width: 768px)" srcset="images/cat-after-desktop@1x.webp 1x, images/cat-after-desktop@2x.webp 2x">
+                <source type="image/webp" srcset="images/cat-after-mobile@1x.webp 1x, images/cat-after-mobile@2x.webp 2x" width="280" height="256">
                 <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-after-desktop@1x.png 1x, images/cat-after-desktop@2x.webp 2x">
                 <img class="slider__cat-after" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Фото стройного кота после питания">
               </picture>
@@ -157,8 +156,8 @@
             </div>
             <div class="slider__before">
               <picture>
-                <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-before-desktop@1x.webp 1x, images/cat-before-desktop@2x.webp 2x">
-                <source type="image/webp" srcset="images/cat-before-mobile@1x.webp 1x, images/cat-before-mobile@2x.webp 2x">
+                <source type="image/webp" width="560" height="512" media="(min-width: 768px)" srcset="images/cat-before-desktop@1x.webp 1x, images/cat-before-desktop@2x.webp 2x">
+                <source type="image/webp" width="280" height="256" srcset="images/cat-before-mobile@1x.webp 1x, images/cat-before-mobile@2x.webp 2x">
                 <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-before-desktop@1x.png 1x, images/cat-before-desktop@2x.png 2x">
                 <img class="slider__cat-before" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Фото толстого кота до питания">
               </picture>

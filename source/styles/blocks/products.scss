@@ -9,7 +9,7 @@
   @media (min-width: $tablet-width) {
     border: none;
     margin: 0;
-    padding: 61px 0 0;
+    padding: 60px 0 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,7 +31,7 @@
 }
 
 .products__title {
-  font-family: "Oswald",system-ui, "Arial", sans-serif;
+  font-family: "Oswald", system-ui, "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   color: $base-color-title;

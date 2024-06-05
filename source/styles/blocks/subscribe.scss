@@ -105,7 +105,7 @@
 .subscribe__form {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 15px 0 0;
   gap: 15px;
 
   @media (min-width: $tablet-width) {
@@ -121,21 +121,23 @@
 }
 
 .subscribe__text {
-  outline: 1px solid rgba(231, 231, 231, 1);
+  border: 1px solid rgba(231, 231, 231, 1);
   color: $base-color-title;
   text-transform: uppercase;
   padding: 12px;
   font-family: "Oswald", system-ui, "Arial", sans-serif;
   font-size: 20px;
   line-height: 30px;
+  box-sizing: border-box;
 
   &:hover {
 
-    outline: 1px solid rgba(205, 205, 205, 1);
+    border: 1px solid rgba(205, 205, 205, 1);
   }
 
   &:focus {
-    border: 2px solid rgba(68, 68, 68, 1);
+    outline-offset: -2px;
+    outline: 2px solid rgba(68, 68, 68, 1);
   }
 
   &:active {

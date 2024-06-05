@@ -8,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 236px;
+    margin-top: 238px;
     padding: 0;
   }
 }
@@ -41,6 +41,10 @@
     background: #f2f2f2;
     margin: 0 0 30px;
     padding: 78px 29px 58px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 78px 61px 58px 52px;
   }
 }
 
@@ -159,7 +163,7 @@
 }
 
 .preview__title {
-  font-family: "Oswald",system-ui, "Arial", sans-serif;
+  font-family: "Oswald", system-ui, "Arial", sans-serif;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -214,7 +218,7 @@
   display: flex;
   width: 227px;
   flex-wrap: wrap;
-  font-family: "Lato",system-ui, "Arial", sans-serif;
+  font-family: "Lato", system-ui, "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -247,7 +251,7 @@
 }
 
 .preview__item {
-  font-family: "Oswald",system-ui, "Arial", sans-serif;
+  font-family: "Oswald", system-ui, "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;

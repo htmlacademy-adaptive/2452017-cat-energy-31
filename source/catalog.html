@@ -41,13 +41,10 @@
             <img class="main-header-catalog__logo-text" src="images/logo/logo-text-mobile.svg" width="120" height="18" alt="Текст Cat Energy">
           </picture>
         </a>
-        <button class="main-header-catalog__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
-          <svg class="main-header-catalog__toggle-icon" width="24" height="24">
-            <use href="#"></use>
-          </svg>
-        </button>
       </div>
-      <div class="main-header-catalog__main-nav-catalog">
+      <nav class="main-header-catalog-nav navigation navigation--closed">
+        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="site-list site-list--catalog">
           <li class="site-list__item">
             <a href="index.html">Главная</a>
@@ -59,7 +56,7 @@
             <a href="#">Подбор программы</a>
           </li>
         </ul>
-      </div>
+      </nav>
     </div>
   </header>
   <main class="container">
@@ -69,16 +66,16 @@
         <ul class="products__card card">
           <li class="card__container">
             <div class="card__link">
-              <a class="card__content">
+              <a class="card__content" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="images/chicken-small-desktop@1x.webp 1x, images/chicken-small-desktop@2x.webp 2x">
-                  <source type="image/webp" srcset="images/chicken-small-mobile@1x.webp 1x, images/chicken-small-mobile@2x.webp 2x">
+                  <source type="image/webp" width="161" height="172" media="(min-width: 768px)" srcset="images/chicken-small-desktop@1x.webp 1x, images/chicken-small-desktop@2x.webp 2x">
+                  <source type="image/webp" width="68" height="86" srcset="images/chicken-small-mobile@1x.webp 1x, images/chicken-small-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" width="161" height="172" type="image/png" srcset="images/chicken-small-desktop@1x.png 1x, images/chicken-small-desktop@2x.png 2x">
                   <img class="card__image" src="images/chicken-small-mobile@1x.png" srcset="images/chicken-small-mobile@2x.png 2x" width="68" height="86" alt="Упаковка Cat Energy со вкусом курицы весом 500 г">
                 </picture>
               </a>
               <div class="card__item">
-                <a class="card__title">Cat Energy PRO
+                <a class="card__title" href="#">Cat Energy PRO
                   500 г</a>
                 <dl class="card__text">
                   <dt class="card__weight">Масса</dt>
@@ -102,9 +99,9 @@
             <div class="card__link">
               <a class="card__content" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/chicken-large-desktop@1x.webp 1x, images/chicken-large-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="images/chicken-large-tablet@1x.png 1x, images/chicken-large-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="images/chicken-large-mobile@1x.webp 1x, images/chicken-large-mobile@2x.webp 2x">
+                  <source type="image/webp" width="172" height="196" media="(min-width: 1440px)" srcset="images/chicken-large-desktop@1x.webp 1x, images/chicken-large-desktop@2x.webp 2x">
+                  <source type="image/webp" width="168" height="206" media="(min-width: 768px)" srcset="images/chicken-large-tablet@1x.png 1x, images/chicken-large-tablet@2x.webp 2x">
+                  <source type="image/webp" width="84" height="100" srcset="images/chicken-large-mobile@1x.webp 1x, images/chicken-large-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" width="172" height="196" type="image/png" srcset="images/chicken-large-desktop@1x.png 1x, images/chicken-large-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" width="168" height="206" type="image/png" srcset="images/chicken-large-tablet@1x.png 1x, images/chicken-large-tablet@2x.png 2x">
                   <img class="card__image" src="images/chicken-large-mobile@1x.png" srcset="images/chicken-large-mobile@2x.png 2x" width="84" height="100" alt="Упаковка Cat Energy со вкусом курицы весом 1000 г">
@@ -134,8 +131,8 @@
             <div class="card__link">
               <a class="card__content" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="images/fish-small-desktop@1x.webp 1x, images/fish-small-desktop@2x.webp 2x">
-                  <source type="image/webp" srcset="images/fish-small-mobile@1x.webp 1x, images/fish-small-mobile@2x.webp 2x">
+                  <source type="image/webp" width="163" height="174" media="(min-width: 768px)" srcset="images/fish-small-desktop@1x.webp 1x, images/fish-small-desktop@2x.webp 2x">
+                  <source type="image/webp" width="68" height="78" srcset="images/fish-small-mobile@1x.webp 1x, images/fish-small-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" width="163" height="174" type="image/png" srcset="images/fish-small-desktop@1x.png 1x, images/fish-small-desktop@2x.png 2x">
                   <img class="card__image" src="images/fish-small-mobile@1x.png" srcset="images/fish-small-mobile@2x.png 2x" width="68" height="78" alt="Упаковка Cat Energy со вкусом рыбы весом 500 г">
                 </picture>
@@ -164,9 +161,9 @@
             <div class="card__link">
               <a class="card__content" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/fish-large-desktop@1x.webp 1x, images/fish-large-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="images/fish-large-tablet@1x.webp 1x, images/fish-large-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="images/fish-large-mobile@1x.webp 1x, images/fish-large-mobile@2x.webp 2x">
+                  <source type="image/webp" width="172" height="192" media="(min-width: 1440px)" srcset="images/fish-large-desktop@1x.webp 1x, images/fish-large-desktop@2x.webp 2x">
+                  <source type="image/webp" width="168" height="200" media="(min-width: 768px)" srcset="images/fish-large-tablet@1x.webp 1x, images/fish-large-tablet@2x.webp 2x">
+                  <source type="image/webp" width="84" height="100" srcset="images/fish-large-mobile@1x.webp 1x, images/fish-large-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" width="172" height="192" type="image/png" srcset="images/fish-large-desktop@1x.png 1x, images/fish-large-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" width="168" height="200" type="image/png" srcset="images/fish-large-tablet@1x.png 1x, images/fish-large-tablet@2x.png 2x">
                   <img class="card__image" src="images/fish-large-mobile@1x.png" srcset="images/fish-large-mobile@2x.png 2x" width="84" height="100" alt="Упаковка Cat Energy со вкусом рыбы весом 1000 г">
@@ -196,8 +193,8 @@
             <div class="card__link">
               <a class="card__content" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="images/buckwheat-small-desktop@1x.webp 1x, images/buckwheat-small-desktop@2x.webp 2x">
-                  <source type="image/webp" srcset="images/buckwheat-small-mobile@1x.webp 1x, images/buckwheat-small-mobile@2x.webp 2x">
+                  <source type="image/webp" width="161" height="171" media="(min-width: 768px)" srcset="images/buckwheat-small-desktop@1x.webp 1x, images/buckwheat-small-desktop@2x.webp 2x">
+                  <source type="image/webp" width="68" height="78" srcset="images/buckwheat-small-mobile@1x.webp 1x, images/buckwheat-small-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" width="161" height="171" type="image/png" srcset="images/buckwheat-small-desktop@1x.png 1x, images/buckwheat-small-desktop@2x.png 2x">
                   <img class="card__image" src="images/buckwheat-small-mobile@1x.png" srcset="images/buckwheat-small-mobile@2x.png 2x" width="68" height="78" alt="Упаковка Cat Energy со вкусом гречки весом 500 г">
                 </picture>
@@ -226,9 +223,9 @@
             <div class="card__link">
               <a class="card__content" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 1440px)" srcset="images/buckwheat-large-desktop@1x.webp 1x, images/buckwheat-large-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="images/buckwheat-large-tablet@1x.webp 1x, images/buckwheat-large-tablet@2x.png 2x">
-                  <source type="image/webp" srcset="images/buckwheat-large-mobile@1x.webp 1x, images/buckwheat-large-mobile@2x.webp 2x">
+                  <source type="image/webp" width="172" height="196" media="(min-width: 1440px)" srcset="images/buckwheat-large-desktop@1x.webp 1x, images/buckwheat-large-desktop@2x.webp 2x">
+                  <source type="image/webp" width="168" height="200" media="(min-width: 768px)" srcset="images/buckwheat-large-tablet@1x.webp 1x, images/buckwheat-large-tablet@2x.png 2x">
+                  <source type="image/webp" width="84" height="100" srcset="images/buckwheat-large-mobile@1x.webp 1x, images/buckwheat-large-mobile@2x.webp 2x">
                   <source media="(min-width: 1440px)" width="172" height="196" type="image/png" srcset="images/buckwheat-large-desktop@1x.png 1x, images/buckwheat-large-desktop@2x.png 2x">
                   <source media="(min-width: 768px)" width="168" height="200" type="image/png" srcset="images/buckwheat-large-tablet@1x.png 1x, images/buckwheat-large-tablet@2x.png 2x">
                   <img class="card__image" src="images/buckwheat-large-mobile@1x.png" srcset="images/buckwheat-large-mobile@2x.png 2x" width="84" height="100" alt="Упаковка Cat Energy со вкусом гречки весом 1000 г">
@@ -258,8 +255,8 @@
             <div class="card__link">
               <a class="card__content" href="#">
                 <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="images/rice-small-desktop@1x.webp 1x, images/rice-small-desktop@2x.webp 2x">
-                  <source type="image/webp" srcset="images/rice-small-mobile@1x.webp 1x, images/rice-small-mobile@2x.webp 2x">
+                  <source type="image/webp" width="163" height="174" media="(min-width: 768px)" srcset="images/rice-small-desktop@1x.webp 1x, images/rice-small-desktop@2x.webp 2x">
+                  <source type="image/webp" width="72" height="84" srcset="images/rice-small-mobile@1x.webp 1x, images/rice-small-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)" width="163" height="174" type="image/png" srcset="images/rice-small-desktop@1x.png 1x, images/rice-small-desktop@2x.png 2x">
                   <img class="card__image" src="images/rice-small-mobile@1x.png" srcset="images/rice-small-mobile@2x.png 2x" width="72" height="84" alt="Упаковка Cat Energy со вкусом риса весом 500 г">
                 </picture>
