@@ -6,7 +6,7 @@
   text-align: center;
   justify-content: center;
   gap: 42px;
-  margin-top: 32px;
+  margin: 32px 0 21px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -34,7 +34,7 @@
 
 
 .site-list a {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", system-ui, "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
@@ -64,7 +64,7 @@
 }
 
 .site-list--catalog a {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", system-ui, "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
@@ -109,35 +109,32 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .site-list__item--current {
+    position: relative;
 
-.site-list__item--current {
-  position: relative;
-
-  &::after {
-    content: "  ";
-    position: absolute;
-    top: 30px;
-    left: 2px;
-    background: #68b738;
-    width: 70px;
-    height: 2px;
-
-    @media (min-width: $tablet-width) {
+    &::after {
+      content: "  ";
+      position: absolute;
       left: 0;
       width: 63px;
+      height: 2px;
       top: 32px;
+      background: #68b738;
+    }
+
+    @media (min-width: $desktop-width) {
+      &::after {
+        content: "  ";
+        position: absolute;
+        background: #ffffff;
+        width: 70px;
+        top: 36px;
+      }
     }
   }
 }
 
-
-@media (min-width: $desktop-width) {
-  .site-list__item--current::after {
-    background: #ffffff;
-    width: 70px;
-    top: 36px;
-  }
-}
 
 @media (min-width: $tablet-width) {
   .site-list__item:last-child {
@@ -149,27 +146,23 @@
   }
 }
 
-.site-list__item--current-catalog {
-  position: relative;
+@media (min-width: $tablet-width) {
+  .site-list__item--current-catalog {
+    position: relative;
 
-  &::after {
-    content: "  ";
-    position: absolute;
-    top: 30px;
-    left: 1px;
-    background: #68b738;
-    width: 167px;
-    height: 2px;
-
-    @media (min-width: $tablet-width) {
+    &::after {
+      content: "  ";
+      position: absolute;
+      background: #68b738;
       width: 154px;
+      height: 2px;
       top: 30px;
       left: 0;
-    }
 
-    @media (min-width: $desktop-width) {
-      width: 171px;
-      top: 35px;
+      @media (min-width: $desktop-width) {
+        width: 171px;
+        top: 35px;
+      }
     }
   }
 }

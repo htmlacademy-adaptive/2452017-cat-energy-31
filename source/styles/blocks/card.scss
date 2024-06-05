@@ -1,11 +1,19 @@
 .card {
+  display: flex;
+  flex-flow: column wrap;
   margin: 0;
-  padding: 0;
+  padding: 62px 0 24px;
+  gap: 46px;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 66px 0 0;
+    flex-direction: row;
+    gap: 40px 60px;
+    margin: 4px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 45px 80px;
+    margin: 3px 0 0;
   }
 }
 
@@ -103,7 +111,7 @@
 }
 
 .card__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", system-ui, "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
@@ -111,6 +119,7 @@
   color: $base-color-title;
   margin: 0 0 14px;
   width: 75px;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -135,7 +144,7 @@
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", system-ui, "Arial", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -177,7 +186,7 @@
 .card__button {
   display: block;
   padding: 10px 109px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", system-ui, "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -245,24 +254,46 @@
   display: flex;
   flex-wrap: wrap;
   width: 219px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", system-ui, "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: $base-color-title;
   text-transform: uppercase;
   justify-content: center;
-  margin: 24px 0 0;
+  margin: 54px 0 0;
+  position: relative;
+  text-decoration: none;
+
+  &::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#icon-plus-tablet");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -53px;
+
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 60px;
+      top: -111px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -100px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 134px;
     text-align: center;
     font-size: 20px;
     line-height: 24px;
-    margin: 50px 0 0;
+    margin: 162px 0 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 39px 0 0;
+    margin: 148px 0 0;
   }
 }
 
@@ -288,7 +319,7 @@
 }
 
 .card__button-all {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", system-ui, "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   display: block;

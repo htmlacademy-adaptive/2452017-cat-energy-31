@@ -24,7 +24,7 @@
       position: absolute;
       z-index: -100;
       min-height: 693px;
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85)), url("../../images/index-backgroud-desktop@2x.jpg"), linear-gradient(90deg, rgba(80, 78, 83, 0.85) 50%, rgba(80, 80, 85, 0.85) 50%);
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 50%,), image-set("../images/index-background-desktop@1x.webp" type("image/webp") 1x, "../images/index-background-desktop@2x.webp" type("image/webp") 2x, "../images/index-background-desktop@1x.png" 1x, "../images/index-background-desktop@2x.png" 2x), linear-gradient(90deg, rgba(80, 78, 83, 0.85) 50%, rgba(80, 78, 83, 0.85) 50%);
       background-repeat: no-repeat;
       background-size: cover;
       padding: 0;
@@ -33,35 +33,36 @@
   }
 }
 
-.main-header__main-nav {
+.main-header-nav {
   margin: 0 auto;
   padding: 0;
   width: 280px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 0 0 84px;
     padding: 14px 0 12px;
     width: 436px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 2px 12px;
+    padding: 16px 2px 12px;
     width: 478px;
+    margin: 0 0 0 524px;
   }
 }
 
 .main-header__wrapper {
   display: flex;
-  width: 280px;
   margin: 0 auto;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-flow: row wrap;
     width: 704px;
     justify-content: space-between;
     padding: 0;
-    flex-direction: row;
     margin: 0 auto;
   }
 
@@ -78,23 +79,22 @@
 
 .main-header__block {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-flow: row wrap;
   min-height: 53px;
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    width: 174px;
+    width: 708px;
     flex-direction: row;
-    justify-content: space-between;
     margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    width: 202px;
+    width: 1220px;
     flex-direction: row;
-    justify-content: space-between;
     margin: 0;
   }
 }
@@ -118,7 +118,7 @@
 
 
 .main-header__logo-text {
-  padding: 9px 5px 0 16px;
+  padding: 9px 5px 0 56px;
   width: 110px;
   height: auto;
 
@@ -132,20 +132,11 @@
 
   @media (min-width: $tablet-width) {
     padding: 16px 0 0 1px;
-    margin: 0 0 0 11px;
+    margin: 0 0 0 12px;
   }
 
   @media (min-width: $desktop-width) {
     width: 130px;
     padding: 17px 0 0 2px;
-  }
-}
-
-.main-header__toggle {
-  background-color: rgb(255, 255, 255);
-  border: none;
-
-  @media (min-width: $tablet-width) {
-    display: none;
   }
 }

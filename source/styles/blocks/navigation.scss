@@ -1,0 +1,23 @@
+.navigation__toggle {
+  top: -44px;
+  right: calc(50% - 140px);
+  border: none;
+  position: absolute;
+  width: 24px;
+  height: 38px;
+  display: none;
+}
+
+.navigation--closed .navigation__toggle {
+  background-image: url("../icons/stack.svg#logo-menu-open");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+}
+
+.navigation--opened .navigation__toggle {
+  background-image: url("../icons/stack.svg#logo-menu-close");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+}
