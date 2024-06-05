@@ -1,5 +1,5 @@
 .promo {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald",system-ui, "Arial", sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
@@ -126,7 +126,7 @@
   background-color: $base-color-background;
   padding: 10px 0;
   margin: 3px auto 0;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald",system-ui, "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;

@@ -1,5 +1,5 @@
 .subscribe {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", system-ui, "Arial", sans-serif;
   padding: 41px 0;
 
   @media (min-width: $tablet-width) {
@@ -27,7 +27,7 @@
 }
 
 .subscribe__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", system-ui, "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
   color: $base-color-title;
@@ -41,7 +41,7 @@
   @media (min-width: $tablet-width) {
     box-shadow: 0 0 rgb(255, 255, 255), 40px 0 rgb(255, 255, 255);
     padding-left: 40px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", system-ui, "Arial", sans-serif;
     font-size: 32px;
     line-height: 32px;
   }
@@ -121,17 +121,17 @@
 }
 
 .subscribe__text {
-  border: 1px solid rgba(231, 231, 231, 1);
+  outline: 1px solid rgba(231, 231, 231, 1);
   color: $base-color-title;
   text-transform: uppercase;
   padding: 12px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", system-ui, "Arial", sans-serif;
   font-size: 20px;
   line-height: 30px;
 
   &:hover {
 
-    border: 1px solid rgba(205, 205, 205, 1);
+    outline: 1px solid rgba(205, 205, 205, 1);
   }
 
   &:focus {
@@ -152,7 +152,7 @@
 }
 
 .subscribe__button {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", system-ui, "Arial", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 26px;

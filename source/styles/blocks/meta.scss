@@ -48,7 +48,7 @@
   display: flex;
   width: 70px;
   flex-wrap: wrap;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato",system-ui, "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
@@ -58,7 +58,7 @@
   margin: 0;
   padding: 0 10px;
   text-align: center;
-  background: #eaeaea;
+  background: rgb(234, 234, 234);
   @media (min-width: $tablet-width) {
     top: 63px;
     left: 23px;
@@ -80,7 +80,7 @@
   display: flex;
   width: 70px;
   flex-wrap: wrap;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato",system-ui, "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
@@ -90,7 +90,7 @@
   margin: 0;
   padding: 0 10px;
   text-align: center;
-  background: #eaeaea;
+  background: rgb(234, 234, 234);
   @media (min-width: $tablet-width) {
     top: 63px;
     left: 9px;
@@ -109,7 +109,7 @@
 
 .meta__text {
   display: flex;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald",system-ui, "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -130,7 +130,7 @@
 
 .meta__price {
   box-sizing: border-box;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald",system-ui, "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;

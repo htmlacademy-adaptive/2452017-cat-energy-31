@@ -1,6 +1,6 @@
 .main-footer {
   padding: 40px 0;
-  background: #eaeaea;
+  background: rgb(242, 242, 242);
 
   @media (min-width: $tablet-width) {
     padding: 57px 0;
@@ -86,7 +86,7 @@
   width: 280px;
   align-items: center;
   text-decoration: none;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", system-ui, "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;

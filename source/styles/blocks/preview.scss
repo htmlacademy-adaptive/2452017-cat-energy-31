@@ -24,6 +24,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-wrap: wrap;
     width: 1220px;
     margin: 0 auto;
     justify-content: space-between;
@@ -40,10 +41,6 @@
     background: #f2f2f2;
     margin: 0 0 30px;
     padding: 78px 29px 58px 52px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 570px;
   }
 }
 
@@ -162,7 +159,7 @@
 }
 
 .preview__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald",system-ui, "Arial", sans-serif;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -217,7 +214,7 @@
   display: flex;
   width: 227px;
   flex-wrap: wrap;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato",system-ui, "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -250,7 +247,7 @@
 }
 
 .preview__item {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald",system-ui, "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
@@ -297,7 +294,7 @@
   height: 12px;
   left: 102px;
   top: 6px;
-  background-position: -8px 0;
+  background-position: -9px 0;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
@@ -308,7 +305,7 @@
 
 .preview__item--slim:hover::after,
 :focus::after {
-  transform: scaleX(1.1);
+  transform: scaleX(1.6);
   transition: 0.4s;
   background-position: 0 0;
 }
@@ -323,7 +320,7 @@
   left: 98px;
   top: 7px;
   margin: 0;
-  background-position: -8px 0;
+  background-position: -9px 0;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
@@ -334,7 +331,7 @@
 
 .preview__item--pro:hover::after,
 :focus::after {
-  transform: scaleX(1.1);
+  transform: scaleX(1.6);
   transition: 0.4s;
   background-position: 0 0;
 }
