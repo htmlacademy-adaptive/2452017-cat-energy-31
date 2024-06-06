@@ -126,7 +126,7 @@
   &::after {
     content: " ";
     mask-image: url("../../icons/stack.svg#icon-slider");
-    mask-size: 24px 18px;
+    mask-size: contain;
     mask-repeat: no-repeat;
     position: absolute;
     width: 24px;
@@ -134,7 +134,7 @@
     top: 9px;
     left: 6px;
     background: rgb(102, 102, 102);
-    background-size: 24px 18px;
+    display: block;
   }
 
 
@@ -143,14 +143,14 @@
   }
 }
 
-.slider__scale:hover {
-  background: rgba(94, 170, 47, 1);
-}
-
 .slider__toggle:hover {
   border: 2px solid rgba(94, 170, 47, 1);
 }
 
 .slider__toggle:hover::after {
+  background: rgba(94, 170, 47, 1);
+}
+
+.slider__scale:has(.slider__toggle:hover) {
   background: rgba(94, 170, 47, 1);
 }
