@@ -41,7 +41,7 @@
             <img class="main-header__logo-text" src="images/logo/logo-text-mobile.svg" width="120" height="18" alt="Текст Cat Energy">
           </picture>
         </a>
-        <nav class="main-header-nav navigation navigation--closed">
+        <nav class="main-header-nav navigation navigation--closed"><!-- navigation--opened класс переключателя при открытом состоянии, navigation--closed класс переключателя при закрытом состоянии -->
           <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
           </button>
           <ul class="site-list">
@@ -149,11 +149,9 @@
                 <img class="slider__cat-after" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Фото стройного кота после питания">
               </picture>
             </div>
-            <div class="slider__scale">
-              <button class="slider__toggle" type="button">
-                <span class="visually-hidden">кнопка перемещения фото</span>
-              </button>
-            </div>
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">кнопка перемещения фото</span>
+            </button>
             <div class="slider__before">
               <picture>
                 <source type="image/webp" width="560" height="512" media="(min-width: 768px)" srcset="images/cat-before-desktop@1x.webp 1x, images/cat-before-desktop@2x.webp 2x">
