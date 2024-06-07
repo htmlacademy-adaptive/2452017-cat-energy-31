@@ -145,14 +145,30 @@
   background: rgba(94, 170, 47, 1);
 }
 
+.slider__toggle:active {
+  background: rgba(158, 204, 130, 1);
+}
+
 .slider__toggle:hover::after {
   background: rgba(94, 170, 47, 1);
+}
+
+.slider__toggle:active::after {
+  background: rgba(158, 204, 130, 1);
 }
 
 .slider__toggle:hover::before {
   border: 2px solid rgba(94, 170, 47, 1);
 }
 
+.slider__toggle:active::before {
+  border: 2px solid rgba(158, 204, 130, 1);
+}
+
 .slider__scale:has(.slider__toggle:hover) {
   background: rgba(94, 170, 47, 1);
+}
+
+.slider__scale:has(.slider__toggle:active) {
+  background: rgba(158, 204, 130, 1);
 }
